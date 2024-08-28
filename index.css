@@ -1,16 +1,14 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
 .home-page {
   background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1440px;
   box-sizing: border-box;
 }
 .home-page .body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1440px;
   box-sizing: border-box;
 }
 .home-page .footer {
@@ -19,37 +17,31 @@
   flex-direction: column;
   align-items: center;
   padding: 58px 76.9px 26px 80px;
-  width: fit-content;
+  width: 100%;
   box-sizing: border-box;
 }
 .home-page .header {
-  background: linear-gradient(
-      180deg,
-      rgba(20, 4, 60, 0.8),
-      rgba(255, 255, 255, 0.8)
-    ),
-    url("../assets/images/rectangle_14411.jpeg") 50% / cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 84px 40px 78px;
-  width: 1440px;
+  padding: 0px 78px 40px 78px;
   box-sizing: border-box;
+  height: 100vh;
 }
+
+
 .home-page .body-1 {
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.8),
-      rgba(20, 4, 60, 0.8)
-    ),
-    url("../assets/images/rectangle_14414.jpeg") 50% / cover no-repeat;
+  background: url("./assets/section-2-1.svg");
+  height: 100vh;
+  object-fit: cover;
+  object-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
-  display: flex;
-  padding: 251px 0 48px 15px;
-  width: 1440px;
-  box-sizing: border-box;
 }
+
 .home-page .body-2 {
   background: linear-gradient(
       180deg,
@@ -90,33 +82,19 @@
   box-sizing: border-box;
 }
 .home-page .container {
+  overflow-wrap: break-word;
+  font-family: "Poppins";
+  font-weight: 500;
   position: relative;
+  font-size: 14px;
+  color: var(--white-1, #ffffff);
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-}
-.home-page .container-1 {
-  position: relative;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
 }
-.home-page .container-2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-.home-page .container-3 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
+
 .home-page .vector {
   width: 16px;
   height: 15.8px;
@@ -314,12 +292,12 @@
   font-size: 14px;
   color: var(--white-1, #ffffff);
 }
-.home-page .frame-48095455 {
+.home-page .footer-news {
   margin: 0 3.1px 63px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1280px;
+  width: inherit;
   box-sizing: border-box;
 }
 .home-page .frame-48095454 {
@@ -339,7 +317,6 @@
   box-sizing: border-box;
 }
 .home-page .stay-updated {
-  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.5);
   margin: 0 1.6px 15.8px 0;
   display: inline-block;
   overflow-wrap: break-word;
@@ -352,7 +329,6 @@
   color: #ffffff;
 }
 .home-page .sign-up-to-our-newsletter {
-  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.5);
   margin-bottom: 23.5px;
   display: inline-block;
   overflow-wrap: break-word;
@@ -365,7 +341,6 @@
   color: #ffffff;
 }
 .home-page .discover-news-offers-and-more {
-  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.5);
   margin-left: 0.5px;
   overflow-wrap: break-word;
   font-family: "Poppins";
@@ -383,17 +358,23 @@
 .home-page .enter-your-email {
   border-radius: 2px;
   border: 1px solid #dddddd;
+  color: white !important;
   margin: 0 20px 4px 0;
   padding: 11.1px 14px 10.9px 14px;
   width: 395px;
   box-sizing: border-box;
+}
+
+.home-page .enter-your-email::placeholder {
+  color: white;
 }
 .home-page .enter-your-email-1 {
   overflow-wrap: break-word;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
-  color: #ffffff;
+  color: #ffffff !important;
+  background: #14043c;
 }
 .home-page .button-form-submit {
   border-radius: 2px;
@@ -419,7 +400,6 @@
   height: 0px;
 }
 .home-page .links {
-  margin: 0 43.8px 56px 0;
   display: flex;
   flex-direction: row;
   width: fit-content;
@@ -486,7 +466,7 @@
   box-sizing: border-box;
 }
 .home-page .email-footer {
-  margin: 3.8px 13.7px 3.8px 0;
+  margin: 0px 13.7px 3.8px 0;
   display: flex;
   width: 20px;
   height: 20px;
@@ -512,7 +492,6 @@
   box-sizing: border-box;
 }
 .home-page .phone-svgrepo-com-1 {
-  margin: 3px 14.5px 3px 0;
   display: flex;
   width: 20px;
   height: 20px;
@@ -692,33 +671,13 @@
   width: 1280px;
   height: 0px;
 }
-.home-page .frame-48095453 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1280px;
-  box-sizing: border-box;
-}
 .home-page .logo-1 {
   background: url("../assets/images/logo_11.png") 50% / cover no-repeat;
   margin: 6.3px 0;
   width: 198.5px;
   height: 68.5px;
 }
-.home-page .frame-48095452 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-.home-page .frame-48095451 {
-  margin: 0 3.1px 16px 0;
-  display: flex;
-  flex-direction: row;
-  column-gap: 12px;
-  width: 200px;
-  box-sizing: border-box;
-}
+
 .home-page .frame-48095447 {
   border-radius: 20.5px;
   background: #ffffff;
@@ -757,12 +716,17 @@
 }
 .home-page .navbar {
   position: relative;
-  margin-bottom: 164px;
   display: flex;
   padding: 18px 0 18px 2.7px;
-  width: 1440px;
+  width: 100%;
   box-sizing: border-box;
 }
+
+.slider-buttons {
+  position: absolute;
+  bottom: 0;
+}
+
 .home-page .down-arrow-5-svgrepo-com-1 {
   margin: 12.2px 0 11.5px 0;
   display: flex;
@@ -774,13 +738,17 @@
   width: 6.7px;
   height: 3.3px;
 }
-.home-page .frame-48095467 {
+.home-page .header-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 405.8px;
   height: fit-content;
   box-sizing: border-box;
+}
+
+.header-icons img {
+  width: 20px;
 }
 .home-page .home {
   margin-right: 13.5px;
@@ -805,18 +773,7 @@
   font-size: 18px;
   color: var(--white, #ffffff);
 }
-.home-page .group-1 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 100%;
-  box-sizing: border-box;
-}
+
 .home-page .frame-48095402 {
   margin: 21.3px 0 13.7px 0;
   display: flex;
@@ -877,11 +834,13 @@
   box-sizing: border-box;
 }
 .home-page .group-30 {
+  margin-bottom: 17px;
   margin-left: 7px;
   display: flex;
   flex-direction: row;
   column-gap: 13px;
-  width: 87px;
+  width: 100%;
+  justify-content: center;
   box-sizing: border-box;
 }
 .home-page .ellipse-75 {
@@ -914,13 +873,18 @@
   width: 7px;
   height: 7px;
 }
-.home-page .frame-48095464 {
-  margin: 0 0 417px 21px;
+.home-page .header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: fit-content;
   box-sizing: border-box;
+  margin-top: 4rem;
+  color: white;
+}
+
+.header-logo img {
+  width: 130px;
 }
 .home-page .title {
   margin-bottom: 21px;
@@ -961,7 +925,7 @@
   width: 699px;
   height: 0px;
 }
-.home-page .frame-48095465 {
+.home-page .header-buttons {
   margin: 0 0 40px 6px;
   display: flex;
   flex-direction: row;
@@ -973,6 +937,7 @@
   background: var(--brand-blue-1, #14043c);
   margin-right: 24px;
   display: flex;
+  justify-content: center;
   padding: 12px 0.8px 12px 0;
   width: 251px;
   box-sizing: border-box;
@@ -988,6 +953,7 @@
   border-radius: 6px;
   background: var(--white-2, #ffffff);
   display: flex;
+  justify-content: center;
   padding: 12px 0.7px 12px 0;
   width: 251px;
   box-sizing: border-box;
@@ -1030,8 +996,7 @@
   justify-content: space-between;
   box-sizing: border-box;
 }
-.home-page .frame-480954641 {
-  margin-bottom: 228px;
+.home-page .section-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1158,7 +1123,6 @@
   height: 41.7px;
 }
 .home-page .frame-480954642 {
-  margin-bottom: 228px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1285,7 +1249,6 @@
   box-sizing: border-box;
 }
 .home-page .frame-480954643 {
-  margin-bottom: 228px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1314,7 +1277,7 @@
   width: fit-content;
   box-sizing: border-box;
 }
-.home-page .electrical-manual-and-non-recliner-3 {
+.home-page .section-title{
   margin: 0 19.3px 14px 19.3px;
   display: inline-block;
   overflow-wrap: break-word;
@@ -1412,7 +1375,6 @@
   height: 41.7px;
 }
 .home-page .frame-480954644 {
-  margin-bottom: 228px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1507,3 +1469,20 @@
   font-size: 18px;
   color: var(--brand-blue-1, #14043c);
 }
+
+ /***** Media query for screens less than 576px wide ******/
+ @media (max-width: 575.98px) {
+  .home-page .header {
+    padding: 0px 20px 40px 20px;
+  }
+  .home-page .header-links {
+    display: none;
+  }
+  .home-page .header-icons {
+    display: none;
+  }
+  .home-page .available-designs {
+    font-size: 2rem;
+  }
+}
+
