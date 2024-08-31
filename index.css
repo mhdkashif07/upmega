@@ -30,7 +30,8 @@ ul {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(61%) sepia(173%) saturate(984%) hue-rotate(320deg) brightness(88%);
+  filter: invert(61%) sepia(173%) saturate(984%) hue-rotate(320deg)
+    brightness(88%);
   width: 64px !important;
   height: 45px !important;
 }
@@ -41,7 +42,6 @@ ul {
     height: 10px !important;
     border-radius: 100%;
     aspect-ratio: 1/1;
-
   }
 }
 
@@ -53,6 +53,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  z-index: 2;
 
   & button {
     width: 170px;
@@ -83,36 +84,35 @@ ul {
 }
 
 .navbar-toggler {
-    &:active,
-    &:focus,
-    &:hover {
-      outline: none !important;
-      box-shadow: none !important;
-      border: none  !important;
-    }
-    & i{
-
-      font-size: 2rem;
-      background-color: var(--white-color);
-      padding: 0rem 0.6rem;
-      border-radius: 10px;
-    }
-  
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  & i {
+    font-size: 2rem;
+    background-color: var(--white-color);
+    padding: 0rem 0.6rem;
+    border-radius: 10px;
+  }
 }
 
 .ss {
   height: 100dvh;
 }
 
-.filter-icons{
+.filter-icons {
   filter: invert(1);
 }
 
 /* --------------------- shoaib-code ------------------------ */
 
 .navbar {
-  position: relative;
-  background: linear-gradient(rgba(20, 4, 60, 0.72), rgba(255, 255, 255, 0));
+  position: absolute;
+  top: 0;
+  z-index: 5;
 
   & a {
     color: var(--white-color);
@@ -152,7 +152,7 @@ ul {
   left: 0;
   background-color: var(--white-color);
   width: 100%;
-  z-index: -1;
+  z-index: 4;
   height: 90vh;
 
   & .sofa-container {
@@ -167,7 +167,7 @@ ul {
         width: 67%;
         margin-bottom: 2rem;
       }
-      
+
       width: 30%;
       font-size: 14px;
       font-weight: 500;
@@ -181,32 +181,45 @@ ul {
   font-weight: 500;
 }
 
-@media screen and  (max-width: 992px){
-  .navbar-collapse{
+@media screen and (max-width: 992px) {
+  .navbar-collapse {
     background-color: #2b2a2a;
     padding: 1rem;
   }
 }
-  
 
-.nav-item{
+.nav-item {
   margin-bottom: 1rem;
 }
 
-
 /*  ----------------- hero-section -------------------------- */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 4, 60, 0.72),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
+}
+
 .hero-wrapper {
   height: 100dvh;
+  /* position: absolute; */
+  /* z-index: 3; */
 
-
-  .hero-section {
+  & .hero-section {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100dvh;
-
-    z-index: -5;
+    z-index: 2;
 
     & .hero-section-carousel {
       position: relative;
@@ -228,6 +241,7 @@ ul {
         align-items: center;
         flex-direction: column;
         color: var(--white-color);
+        z-index: 2;
 
         & h1 {
           font-size: 2.5rem;
@@ -456,5 +470,75 @@ ul {
         text-transform: uppercase;
       }
     }
+  }
+}
+
+/********************   Product page      *********************/
+.product-section {
+  /* background: white; */
+  & .navbar {
+    background: white;
+  }
+
+  & .nav-link {
+    color: black;
+  }
+
+  .carouselExampleCaptions {
+    & img {
+      height: 400px;
+    }
+  }
+
+  .stepper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 150px;
+    height: 60px;
+    margin: 0 10px;
+    border: 2px solid #14043c;
+    border-radius: 8px;
+    color: #14043c;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+  }
+
+  .step.active-step {
+    background-color: #14043c;
+    color: #fff;
+  }
+
+  .step-number {
+    width: 30px;
+    height: 30px;
+    background-color: #d9d9dd;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #645f7f;
+    left: calc(50% - 15px);
+    margin-right: 10px;
+  }
+
+  .step.active-step .step-number {
+    background-color: white;
+    color: #14043c;
+  }
+
+  .step-label {
+    font-size: 14px;
   }
 }
