@@ -541,4 +541,42 @@ ul {
   .step-label {
     font-size: 14px;
   }
+
+  .form-check-label {
+    padding: 5px 10px;
+    border: 1px solid #979797;
+    font-size: 15px;
+    border-radius: 7px;
+  }
+
+  & .modal-button {
+    background-color: #14043c !important;
+    color: white !important;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+
+  .product-box {
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #14043c !important;
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .product-image {
+    width: 100px;
+  }
+
+  .product-info {
+    gap: 2px; /* Adjusted for spacing between name and price */
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
 }

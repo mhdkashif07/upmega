@@ -155,9 +155,9 @@
 
       <!-- product section -->
       <div class="container mt-5">
-        <div class="row">
-          <!-- Left 8-Column Section for Carousel -->
-          <div class="col-md-8">
+        <div class="row d-flex justify-content-evenly">
+          <!-- Left Column Section for Carousel -->
+          <div class="col-md-7">
             <div
               id="carouselExampleIndicators2"
               class="carousel slide carouselExampleCaptions"
@@ -214,34 +214,366 @@
             </div>
           </div>
 
-          <!-- Right 4-Column Section for Sofa Selection -->
+          <!-- Right Column Section for Sofa Selection -->
           <div class="col-md-4">
             <div class="sofa-selection">
-              <h4>Select Sofa Type</h4>
+              <h4 class="text-center mt">Series 1</h4>
               <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="sofaType"
-                  id="manualRecliner"
-                  value="manual"
-                />
-                <label class="form-check-label" for="manualRecliner">
-                  Manual Recliner
-                </label>
+                <div
+                  class="product-type d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h4>Manual Recliner</h4>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+
+                <div
+                  class="form-check-label d-flex justify-content-between align-items-center mb-3"
+                  for="manualRecliner"
+                >
+                  <div>Swivel</div>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+
+                <div
+                  class="form-check-label d-flex justify-content-between align-items-center"
+                  for="manualRecliner"
+                >
+                  <div>Glider</div>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary modal-button mt-3 mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Features
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Modal title
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">...</div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="sofaType"
-                  id="electricalRecliner"
-                  value="electrical"
-                />
-                <label class="form-check-label" for="electricalRecliner">
-                  Electrical Recliner
-                </label>
+                <div
+                  class="product-type d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h4>Non Recliner</h4>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+
+                <div
+                  class="form-check-label d-flex justify-content-between align-items-center mb-3"
+                  for="manualRecliner"
+                >
+                  <div>Swivel</div>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+
+                <div
+                  class="form-check-label d-flex justify-content-between align-items-center"
+                  for="manualRecliner"
+                >
+                  <div>Glider</div>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary modal-button mt-3 mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Features
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Modal title
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">...</div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="form-check">
+                <div
+                  class="product-type d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h4>Electrical Recliner</h4>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+
+                <div
+                  class="form-check-label d-flex justify-content-between align-items-center mb-3"
+                  for="manualRecliner"
+                >
+                  <div>Swivel</div>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+
+                <div
+                  class="form-check-label d-flex justify-content-between align-items-center"
+                  for="manualRecliner"
+                >
+                  <div>Glider</div>
+                  <span>KES. <span class="product-price">365</span> </span>
+                </div>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary modal-button mt-3 mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Features
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Modal title
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">...</div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- fabric selection -->
+              <h4 class="text-center mt">Fabric</h4>
+              <div class="form-check">
+                <div class="container-fluid">
+                  <div class="row">
+                    <!-- First Box -->
+                    <div class="col-md-6 mb-4">
+                      <div class="product-box d-flex align-items-center border">
+                        <div
+                          class="product-details d-flex flex-column align-items-center"
+                        >
+                          <div class="product-info d-flex flex-column ms-3">
+                            <span class="product-name">Micro Fiber</span>
+                            <span class="product-price text-muted"
+                              >KES 243</span
+                            >
+                          </div>
+                          <img
+                            src="./assets/s2.png"
+                            alt="Product Image"
+                            class="product-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Second Box -->
+                    <div class="col-md-6 mb-4">
+                      <div class="product-box d-flex align-items-center border">
+                        <div
+                          class="product-details d-flex flex-column align-items-center"
+                        >
+                          <div class="product-info d-flex flex-column ms-3">
+                            <span class="product-name">Micro Fiber</span>
+                            <span class="product-price text-muted"
+                              >KES 243</span
+                            >
+                          </div>
+                          <img
+                            src="./assets/s2.png"
+                            alt="Product Image"
+                            class="product-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <!-- Third Box -->
+                    <div class="col-md-6 mb-4">
+                      <div class="product-box d-flex align-items-center border">
+                        <div
+                          class="product-details d-flex flex-column align-items-center"
+                        >
+                          <div class="product-info d-flex flex-column ms-3">
+                            <span class="product-name">Micro Fiber</span>
+                            <span class="product-price text-muted"
+                              >KES 243</span
+                            >
+                          </div>
+                          <img
+                            src="./assets/s2.png"
+                            alt="Product Image"
+                            class="product-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Fourth Box -->
+                    <div class="col-md-6 mb-4">
+                      <div class="product-box d-flex align-items-center border">
+                        <div
+                          class="product-details d-flex flex-column align-items-center"
+                        >
+                          <div class="product-info d-flex flex-column ms-3">
+                            <span class="product-name">Micro Fiber</span>
+                            <span class="product-price text-muted"
+                              >KES 243</span
+                            >
+                          </div>
+                          <img
+                            src="./assets/s2.png"
+                            alt="Product Image"
+                            class="product-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary modal-button mt-3 mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Features
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Modal title
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">...</div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="main-buttons">
                 <button class="btn btn-primary" onclick="nextStep()">
                   Next
@@ -263,7 +595,7 @@
       let currentStep = 1;
 
       function nextStep() {
-        if (currentStep < 4) {
+        if (currentStep < 5) {
           // Assuming there are 4 steps in total
           document
             .getElementById("step" + currentStep)
