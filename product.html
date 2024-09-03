@@ -165,27 +165,15 @@
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img
-                    src="./assets/recliner-product.svg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
+                  <div class="carousel-item active">
+                    <img
+                      id="productImage"
+                      src="./assets/recliner-product.svg"
+                      class="d-block w-100"
+                      alt="Product Image"
+                    />
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/section-2-2.jpg"
-                    class="d-block w-100"
-                    alt="img"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/section-2-3.jpg"
-                    class="d-block w-100"
-                    alt="img"
-                  />
-                </div>
-                <!-- Additional Carousel Items -->
               </div>
               <button
                 class="carousel-control-prev"
@@ -242,54 +230,18 @@
                   <span>KES. <span class="product-price">365</span> </span>
                 </div>
                 <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary modal-button mt-3 mb-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Features
-                </button>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">...</div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Save changes
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                <div class="product-feature-btn d-flex justify-content-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary modal-button mt-3 mb-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Features
+                  </button>
                 </div>
               </div>
-              <div class="form-check">
+              <!-- <div class="form-check">
                 <div
                   class="product-type d-flex justify-content-between align-items-center mb-2"
                 >
@@ -312,7 +264,7 @@
                   <div>Glider</div>
                   <span>KES. <span class="product-price">365</span> </span>
                 </div>
-                <!-- Button trigger modal -->
+               
                 <button
                   type="button"
                   class="btn btn-primary modal-button mt-3 mb-3"
@@ -322,7 +274,7 @@
                   Features
                 </button>
 
-                <!-- Modal -->
+              
                 <div
                   class="modal fade"
                   id="exampleModal"
@@ -359,8 +311,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="form-check">
+              </div> -->
+              <!-- <div class="form-check">
                 <div
                   class="product-type d-flex justify-content-between align-items-center mb-2"
                 >
@@ -383,7 +335,7 @@
                   <div>Glider</div>
                   <span>KES. <span class="product-price">365</span> </span>
                 </div>
-                <!-- Button trigger modal -->
+              
                 <button
                   type="button"
                   class="btn btn-primary modal-button mt-3 mb-3"
@@ -393,7 +345,7 @@
                   Features
                 </button>
 
-                <!-- Modal -->
+              
                 <div
                   class="modal fade"
                   id="exampleModal"
@@ -430,7 +382,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- fabric selection -->
               <h4 class="text-center mt">Fabric</h4>
@@ -443,17 +395,24 @@
                         <div
                           class="product-details d-flex flex-column align-items-center"
                         >
+                          <div>
+                            <input
+                              type="checkbox"
+                              class="sofa-checkbox"
+                              name="product-selection"
+                            />
+                            <img
+                              src="./assets/s2.png"
+                              alt="Product Image"
+                              class="product-image img-fluid"
+                            />
+                          </div>
                           <div class="product-info d-flex flex-column ms-3">
                             <span class="product-name">Micro Fiber</span>
                             <span class="product-price text-muted"
                               >KES 243</span
                             >
                           </div>
-                          <img
-                            src="./assets/s2.png"
-                            alt="Product Image"
-                            class="product-image img-fluid"
-                          />
                         </div>
                       </div>
                     </div>
@@ -464,17 +423,24 @@
                         <div
                           class="product-details d-flex flex-column align-items-center"
                         >
+                          <div>
+                            <input
+                              type="checkbox"
+                              class="sofa-checkbox"
+                              name="product-selection"
+                            />
+                            <img
+                              src="./assets/s2.png"
+                              alt="Product Image"
+                              class="product-image img-fluid"
+                            />
+                          </div>
                           <div class="product-info d-flex flex-column ms-3">
                             <span class="product-name">Micro Fiber</span>
                             <span class="product-price text-muted"
                               >KES 243</span
                             >
                           </div>
-                          <img
-                            src="./assets/s2.png"
-                            alt="Product Image"
-                            class="product-image img-fluid"
-                          />
                         </div>
                       </div>
                     </div>
@@ -487,17 +453,24 @@
                         <div
                           class="product-details d-flex flex-column align-items-center"
                         >
+                          <div>
+                            <input
+                              type="checkbox"
+                              class="sofa-checkbox"
+                              name="product-selection"
+                            />
+                            <img
+                              src="./assets/s2.png"
+                              alt="Product Image"
+                              class="product-image img-fluid"
+                            />
+                          </div>
                           <div class="product-info d-flex flex-column ms-3">
                             <span class="product-name">Micro Fiber</span>
                             <span class="product-price text-muted"
                               >KES 243</span
                             >
                           </div>
-                          <img
-                            src="./assets/s2.png"
-                            alt="Product Image"
-                            class="product-image img-fluid"
-                          />
                         </div>
                       </div>
                     </div>
@@ -508,69 +481,83 @@
                         <div
                           class="product-details d-flex flex-column align-items-center"
                         >
+                          <div>
+                            <input
+                              type="checkbox"
+                              class="sofa-checkbox"
+                              name="product-selection"
+                            />
+                            <img
+                              src="./assets/s2.png"
+                              alt="Product Image"
+                              class="product-image img-fluid"
+                            />
+                          </div>
                           <div class="product-info d-flex flex-column ms-3">
                             <span class="product-name">Micro Fiber</span>
                             <span class="product-price text-muted"
                               >KES 243</span
                             >
                           </div>
-                          <img
-                            src="./assets/s2.png"
-                            alt="Product Image"
-                            class="product-image img-fluid"
-                          />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary modal-button mt-3 mb-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Features
-                </button>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Modal title
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">...</div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Save changes
-                        </button>
-                      </div>
+                <div class="container">
+                  <div class="color-options">
+                    <div
+                      class="color-option"
+                      data-image-src="./assets/s1 (1).png"
+                    >
+                      <img
+                        src="./assets/ligth-brown.png"
+                        alt="Light Brown Color"
+                        class="color-thumbnail"
+                      />
+                    </div>
+                    <div class="color-option" data-image-src="./assets/s2.png">
+                      <img
+                        src="./assets/dark-brown.png"
+                        alt="Dark Brown Color"
+                        class="color-thumbnail"
+                      />
+                    </div>
+                    <div class="color-option" data-image-src="./assets/s3.png">
+                      <img
+                        src="./assets/blue.png"
+                        alt="Beige Color"
+                        class="color-thumbnail"
+                      />
+                    </div>
+                    <div class="color-option" data-image-src="./assets/s4.png">
+                      <img
+                        src="./assets/silver.png"
+                        alt="Tan Color"
+                        class="color-thumbnail"
+                      />
+                    </div>
+                    <div class="color-option" data-image-src="./assets/s5.png">
+                      <img
+                        src="./assets/gray.png"
+                        alt="Cream Color"
+                        class="color-thumbnail"
+                      />
                     </div>
                   </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <div class="product-feature-btn d-flex justify-content-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary modal-button mt-3 mb-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Features
+                  </button>
                 </div>
               </div>
 
@@ -579,6 +566,42 @@
                   Next
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
             </div>
           </div>
         </div>
@@ -618,6 +641,42 @@
             .classList.add("active-step");
         }
       }
+
+      // Get all checkboxes with the class 'sofa-checkbox'
+      const checkboxes = document.querySelectorAll(".sofa-checkbox");
+
+      // Add an event listener to each checkbox
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          // If the checkbox is checked
+          if (this.checked) {
+            // Uncheck all other checkboxes
+            checkboxes.forEach((cb) => {
+              if (cb !== this) {
+                cb.checked = false;
+              }
+            });
+          }
+        });
+      });
+
+      // Get the image element and all color options
+      const productImage = document.getElementById("productImage");
+      const colorOptions = document.querySelectorAll(".color-option");
+
+      // Add click event listeners to each color option
+      colorOptions.forEach((option) => {
+        option.addEventListener("click", function () {
+          // Change the image source to the one associated with the clicked color
+          productImage.src = this.getAttribute("data-image-src");
+
+          // Remove 'selected' class from all options
+          colorOptions.forEach((opt) => opt.classList.remove("selected"));
+
+          // Add 'selected' class to the clicked option
+          this.classList.add("selected");
+        });
+      });
     </script>
 
     <script src="./script.js"></script>

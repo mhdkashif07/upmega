@@ -125,7 +125,7 @@ ul {
   }
 
   & .navbar-brand img {
-    width: 120px;
+    width: 170px;
   }
 
   & .navbar-nav li {
@@ -424,7 +424,7 @@ ul {
 
     & .deep-footer {
       & img {
-        width: 120px;
+        width: 150px;
       }
 
       & .social-icons {
@@ -486,7 +486,8 @@ ul {
 
   .carouselExampleCaptions {
     & img {
-      height: 400px;
+      height: 600px;
+      object-fit: contain;
     }
   }
 
@@ -552,10 +553,10 @@ ul {
   & .modal-button {
     background-color: #14043c !important;
     color: white !important;
-    width: 100%;
     border: none;
     font-size: 15px;
     padding: 8px 10px;
+    width: 130px;
   }
 
   .product-box {
@@ -566,6 +567,7 @@ ul {
     border: 1px solid #14043c !important;
     border-radius: 2px;
     opacity: 1;
+    position: relative;
   }
 
   .product-image {
@@ -579,4 +581,48 @@ ul {
   .container-fluid {
     padding: 0;
   }
+
+  & .sofa-checkbox {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+
+
+  .color-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-item.active {
+  background-color: transparent !important;
+}
+
+.color-option {
+    /* width: 40px; */
+    height: 54px;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    padding: 2px;
+
+    img{
+      width: 45px;
+      height: 45px;
+    }
+}
+
+.color-option:hover,
+.color-option.selected {
+    border: 2px solid #000;
+}
+
+.color-red { background-color: #FF0000; }
+.color-blue { background-color: #0000FF; }
+.color-green { background-color: #00FF00; }
+.color-yellow { background-color: #FFFF00; }
+.color-black { background-color: #000000; }
 }
