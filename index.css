@@ -495,6 +495,9 @@ ul {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    padding: 16px 0;
+    background-color: #f4f4f4f4;
+    border-radius: 5px;
   }
 
   .step {
@@ -503,19 +506,20 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 150px;
+    width: 170px;
     height: 60px;
-    margin: 0 10px;
-    border: 2px solid #14043c;
+    margin: 0;
     border-radius: 8px;
-    color: #14043c;
+    color: white;
     font-weight: bold;
     position: relative;
     padding: 10px;
+    background-color: #645f7f;
+    clip-path: polygon(75% 0%, 91% 51%, 75% 100%, 0% 100%, 13% 49%, 0% 0%);
   }
 
   .step.active-step {
-    background-color: #14043c;
+    background-color: var(--pink-color);
     color: #fff;
   }
 
@@ -588,18 +592,17 @@ ul {
     left: 10px;
   }
 
-
   .color-options {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
+  }
 
-.carousel-item.active {
-  background-color: transparent !important;
-}
+  .carousel-item.active {
+    background-color: transparent !important;
+  }
 
-.color-option {
+  .color-option {
     /* width: 40px; */
     height: 54px;
     border-radius: 50%;
@@ -609,20 +612,97 @@ ul {
     transition: border 0.3s;
     padding: 2px;
 
-    img{
+    img {
       width: 45px;
       height: 45px;
     }
-}
+  }
 
-.color-option:hover,
-.color-option.selected {
+  .color-option:hover,
+  .color-option.selected {
     border: 2px solid #000;
-}
+  }
 
-.color-red { background-color: #FF0000; }
-.color-blue { background-color: #0000FF; }
-.color-green { background-color: #00FF00; }
-.color-yellow { background-color: #FFFF00; }
-.color-black { background-color: #000000; }
+  .color-red {
+    background-color: #ff0000;
+  }
+  .color-blue {
+    background-color: #0000ff;
+  }
+  .color-green {
+    background-color: #00ff00;
+  }
+  .color-yellow {
+    background-color: #ffff00;
+  }
+  .color-black {
+    background-color: #000000;
+  }
+
+  .product-total-price {
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
+    padding: 8px 10px;
+    border-radius: 8px;
+  }
+
+  .next-step-btn {
+    background-color: var(--pink-color);
+    color: white;
+  }
+
+  .active {
+    background-color: transparent !important;
+  }
+
+  .nav-tabs {
+    font-size: 12px;
+  }
+
+  .nav-tabs .nav-link.active {
+    border-bottom: 1px solid var(--dark-blue);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .nav-item {
+    margin-bottom: 0;
+  }
+
+  & .review-card-img {
+    width: 100%;
+  }
+
+  & .review-card-btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--dark-blue);
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+  }
+
+  & .review-selected-btn {
+    border-radius: 5px;
+    margin-top: 7px;
+    color: var(--dark-blue);
+    background-color: transparent;
+    width: 100%;
+    padding: 8px 10px;
+    border: 2px solid var(--dark-blue);
+    margin-bottom: 10px;
+  }
+
+  & .review-card-prices div {
+    margin-bottom: 5px;
+  }
+
+  & .review-card-price {
+    color: var(--pink-color);
+  }
+
+  & .currency {
+    font-size: 12px;
+  }
 }
