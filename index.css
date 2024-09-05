@@ -485,8 +485,9 @@ ul {
   }
 
   .carouselExampleCaptions {
+    margin-top: -4.2rem;
     & img {
-      height: 600px;
+      height: 480px;
       object-fit: contain;
     }
   }
@@ -704,5 +705,36 @@ ul {
 
   & .currency {
     font-size: 12px;
+  }
+  & .modal-dialog {
+    max-width: 700px;
+  }
+
+  & .modal-dialog img {
+    width: 300px;
+    height: auto;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 13px;
+    /* width: 300px; */
+  }
+
+  & .scroll-container {
+    max-height: 400px; /* Set the height for scrollable section */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 15px; /* Optional padding */
+  }
+
+  /* Hide the scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+  & .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  & .option.active-series-type {
+    background-color: #f1f1f1;
   }
 }
