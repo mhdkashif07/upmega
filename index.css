@@ -738,3 +738,24 @@ ul {
     background-color: #f1f1f1;
   }
 }
+
+/*************** blog cards section *****************/
+.card-section .btn {
+  border-bottom: 2px solid rgba(111, 0, 255, 0.158);
+  font-weight: bold;
+  border-radius: 0;
+}
+.card-section .btn:hover {
+  border-bottom: 2px solid rgb(174, 0, 255);
+}
+.main-cards {
+  background-color: #5e5b5b15;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+.article-card img {
+  height: 18rem;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 0;
+}
