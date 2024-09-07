@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upmega</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg position-absolute w-100 z-index-5">
+      <div class="container">
+        <a class="navbar-brand logo show" href="#">
+          <img src="./assets/logo.png" class="logo" alt="img" />
+        </a>
+
+        <a class="navbar-brand logo-b hide" href="#">
+          <img src="./assets/logo 1.svg" class="logob" alt="img" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-toggle2-on"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link ac tive" aria-current="page" href="#">Home</a>
+            </li>
+            <li
+              class="nav-item dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Sofas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="social-icons">
+            <img src="./assets/wishlist.svg" alt="" />
+            <img src="./assets/Vector (1).svg" alt="" />
+            <img src="./assets/Shopicon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav-dropdown -->
+    <div class="container-fluid navbar-drop-down hide">
+      <div class="container">
+        <div class="row" style="margin-top: 7rem">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-7 sofa-container">
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s1 (1).png" class="img-fluid" alt="" />
+              <p>Recliner Chair</p>
+            </div>
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s2.png" class="img-fluid" alt="" />
+              <p>Recliner Sectional</p>
+            </div>
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s3.png" class="img-fluid" alt="" />
+              <p>Recliner Sofa Set</p>
+            </div>
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s4.png" class="img-fluid" alt="" />
+              <p>Recliner Sectional</p>
+            </div>
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s5.png" class="img-fluid" alt="" />
+              <p>Recliner Sectional</p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 navbar-drop-down-detail d-flex align-items-lg-end flex-column pe-lg-5"
+          >
+            <div class="detail-wrapper">
+              <h5 class="fw-bold mt-5">Our Products</h5>
+              <p>Recliner Seats</p>
+              <p>Recliner Sectional</p>
+              <p>Recliner Sofa Sets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero-section -->
+    <div class="about-us-container">
+      <div class="container-fluid hero-wrapper">
+        <div class="hero-section">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide hero-section-carousel"
+            data-bs-ride="carousel"
+          >
+            <!-- <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div> -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/2880_x_810_1_2880x810_crop_center.webp"
+                  class="d-block img-fluid hero-image"
+                  alt="..."
+                  style="
+                    min-height: 400px;
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                    z-index: 0;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================================== About Us Section -->
+    <section class="about-section" style="margin-top: 12rem">
+      <div class="container">
+        <h1 class="section-title text-center">About Us</h1>
+        <p class="text-center text-dark">
+          Since 1974, Interwood has provided a variety of high-quality furniture
+          products, and is today recognized as Pakistan’s leading and most
+          trusted furniture brand.
+        </p>
+        <h1 class="text-center mt-5">Interwood's Journey</h1>
+        <p class="mt-4">
+          Interwood Mobel (Pvt.) Ltd. was established in 1974 and has since
+          become Pakistan’s most trusted name in high-quality furniture. Today,
+          it is widely recognized as an industry trendsetter and leader offering
+          a complete range of home and office furniture, kitchens,
+          doors,wardrobes, flooring, accessories and bespoke furniture Starting
+          out with humble roots as a small cabinet and wood workshop in Karachi,
+          Interwood’s quality products quickly gained popularity with a mass
+          audience, exponentially fueling the company’s growth. In less than
+          half a century, Interwood expanded into a major market player with
+          several offices across the country and a retail footprint of 9
+          showrooms in major metropolitan cities. These showrooms are today
+          considered landmarks in Pakistan’s busiest cities and offer customers
+          a complete variety of furniture products under one roof. The latest
+          showroom, which recently opened in Islamabad in 2019, spans over
+          55,000 square feet, offering customers an unparalleled retail
+          experience with an extensive range of high-quality furniture
+          solutions. Additionally, Interwood also actively continues to expand
+          its product offerings to customers by introducing new trends and
+          collaborating with international experts (such as Italian architect
+          Alfredo Zengario) to constantly introduce a wider range of products
+          inspired by diverse influences and built to suit individual customers’
+          needs. To meet the growing market demand, Interwood set up its own
+          dedicated 600,000 square foot factory in Lahore, equipped with a staff
+          of over 1,100 workers and over 300 machines - the most advanced in the
+          country. From wood seasoning and processing, to automated painting,
+          polishing, crafting and finishing, Interwood’s factory is a modern
+          marvel of innovation and technology in the furniture industry and has
+          enabled the company to achieve mass production capability without
+          compromising on its high standard of quality, reducing costs and
+          passing the savings on to its valuable customers. In addition to
+          individual customers, Interwood also caters largely to mega-scale
+          projects providing its trademark furniture and interior-designing
+          solutions to a variety of sectors in Pakistan and abroad. From local
+          luxury residential projects, malls, hospitals, schools and airports,
+          to multi-national corporations, international hotels, and institutions
+          abroad, Interwood continues to make its mark on a variety of
+          businesses and corporations in USA, Europe, Africa, and the Middle
+          East. At the heart of Interwood’s focus remains its expansive base of
+          loyal customers, which can be seen through its dedicated after sales
+          support to all its retail and corporate clients, ensuring customer
+          satisfaction at every level even years after purchase.
+        </p>
+      </div>
+    </section>
+
+    <!-- -------------------------------Quality and Reliability Section -->
+    <section class="Quality-section mt-5">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 col-12">
+            <img
+              src="/assets/WhatsApp_Image_2023-07-31_at_6.01.33_PM_2_1200x1080_crop_center.webp"
+              alt="Quality Image"
+              class="content-image"
+            />
+          </div>
+          <div class="col-md-6 col-12 align-items-lg-center">
+            <h1 class="mb-4">The Quality You Trust</h1>
+            <p>
+              All of our high-quality furniture is manufactured in Pakistan in
+              accordance with the high-quality global standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Reliability-section mt-5 mb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <img src="/assets/content-2.webp" alt="Quality Image" />
+          </div>
+          <div class="col-md-5 mt-5">
+            <h1>The Quality You Trust</h1>
+            <p>
+              All of our high-quality furniture is manufactured in Pakistan in
+              accordance with the high-quality global standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stores Section -->
+    <section class="content-section-stores">
+      <div class="container">
+        <h1 class="section-title text-center mb-5">Our Stores</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="w-100" src="/assets/store1.jpg" alt="Islamabad Store" />
+            <h4 class="text-center mt-3">Islamabad</h4>
+            <p class="text-center">DHA Islamabad</p>
+          </div>
+          <div class="col-md-6">
+            <img class="w-100" src="/assets/store2.webp" alt="Karachi Store" />
+            <h4 class="text-center mt-3">Karachi</h4>
+            <p class="text-center fs-2">DHA Bukhari</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--carousel Testimonials Section -->
+    <section class="testimonials text-center text-white">
+      <div class="container">
+        <h2>
+          We take pride in our work and our <br />
+          customer testimonials reflect that
+        </h2>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            >
+              3
+            </button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div>
+                <p class="px-5">
+                  "I was really impressed with the customer service from<br />
+                  Interwood. The staff was very helpful and answered all<br />
+                  of my questions. The delivery time was also very<br />
+                  impressive. I would definitely recommend Interwood to<br />
+                  anyone looking for high-quality furniture with <br />excellent
+                  service."
+                </p>
+                <h5>Maleeha Awais</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div>
+                <p class="px-5">
+                  "I was really impressed with the customer service from<br />
+                  Interwood. The staff was very helpful and answered all<br />
+                  of my questions. The delivery time was also very<br />
+                  impressive. I would definitely recommend Interwood to<br />
+                  anyone looking for high-quality furniture with <br />excellent
+                  service."
+                </p>
+                <h5>Maleeha Awais</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <p class="px-5">
+                  "I was really impressed with the customer service from<br />
+                  Interwood. The staff was very helpful and answered all<br />
+                  of my questions. The delivery time was also very<br />
+                  impressive. I would definitely recommend Interwood to<br />
+                  anyone looking for high-quality furniture with <br />excellent
+                  service."
+                </p>
+                <h5>Maleeha Awais</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------shop now ---------------------->
+    <section>
+      <div class="shop-content container-fluid p-3">
+        <div class="row text-center">
+          <div class="col-lg-10">
+            <h3 class="pt-2">
+              ENJOY UNBELIEVABLY NEW LOW PRICES EVERY DAY WITH OUR PRICE DROP!
+            </h3>
+          </div>
+          <div class="col-lg-2">
+            <button class="btn p-3 px-4">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------- Footer------------------ -->
+    <div class="container-fluid dark-blue contact-us-section">
+      <div class="row">
+        <div class="col-lg-6 bo rder m-auto contact-us-section-inner">
+          <h5>stay updated</h5>
+          <h2>SIGN UP TO OUR Newsletter</h2>
+          <span>DISCOVER NEWS, OFFERS AND MORE</span>
+
+          <div class="contact-form">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter you email"
+            />
+            <button>subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-section mt-5">
+        <hr />
+        <div class="row py-5">
+          <div class="col-lg-3 production-section mb-5 mb-lg-0">
+            <h3>Our Products</h3>
+            <ul>
+              <li>
+                <a href="#">Recliner Seats</a>
+              </li>
+              <li>
+                <a href="#">Recliner Sectional</a>
+              </li>
+              <li>
+                <a href="#">Recliner Sofa Seats</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 production-section mb-5 mb-lg-0">
+            <h3>Guide</h3>
+            <ul>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <a href="#">Register</a>
+              </li>
+              <li>
+                <a href="#">My Account</a>
+              </li>
+              <li>
+                <a href="#">Sofa Categories</a>
+              </li>
+              <li>
+                <a href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 production-section mb-5 mb-lg-0">
+            <h3>Our Company</h3>
+            <ul>
+              <li>
+                <a href="#">Recliner Seats</a>
+              </li>
+              <li>
+                <a href="#">Recliner Sectional</a>
+              </li>
+              <li>
+                <a href="#">Recliner Sofa Seats</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 production-section ps-lg-5 mb-5 mb-lg-0">
+            <h3>Talk To Us</h3>
+            <ul>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 production-section findus-section">
+            <h3 class="ps-lg-5">Find Us</h3>
+            <div class="d-flex justify-content-lg-end">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-geo-alt" style="color: white"></i>
+                    <span>Capital One Plaza, 3rd Floor</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-envelope" style="color: white"></i>
+                    <span>info@trepanel.ae</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="bi bi-telephone" style="color: white"></i
+                    ><span>+254 (712) 345 678</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row deep-footer mt-4 pb-4">
+          <div class="col-lg-6">
+            <div class="facebook-f-1">
+              <img class="vector" src="./assets/logo.png" />
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex justify-content-end align-items-lg-end flex-column mt-5 mt-lg-0"
+          >
+            <div class="social-icons text-center pe-lg-5">
+              <div class="instagram-1">
+                <i class="bi bi-facebook"></i>
+              </div>
+              <div class="instagram-1">
+                <i class="bi bi-instagram"></i>
+              </div>
+              <div class="frame-48095449">
+                <div class="twitter-1">
+                  <i class="bi bi-twitter"></i>
+                </div>
+              </div>
+              <div class="frame-48095450">
+                <div class="linkedin-in-1">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </div>
+            <small class="copyright-2024-upmega-ltd">
+              © Copyright 2024 - Upmega Ltd
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

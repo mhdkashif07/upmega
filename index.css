@@ -759,3 +759,111 @@ ul {
   background-position: center;
   border-radius: 0;
 }
+
+.blog-section {
+  .hero-content {
+    font-size: 12px !important;
+    width: 100% !important;
+    top: 55% !important;
+    right: 20% !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hero-content h1 {
+    font-size: 1.7rem !important;
+  }
+  .hero-section .btn:hover {
+    color: #fff !important;
+    background-color: #323232 !important;
+    border-radius: 30px !important;
+  }
+}
+
+/*********************  About us section   *****************************/
+
+/* ----------------------Quality and Reliability Section-------- */
+.Quality-section img {
+  width: 100%;
+}
+.Reliability-section {
+  background-color: rgba(163, 159, 159, 0.158) !important;
+  width: 100%;
+  margin: 22rem 0 !important;
+}
+.Reliability-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+/*---------------------------------- carousel----------- */
+.testimonials {
+  background-color: var(--dark-blue);
+  padding: 3rem 0;
+  margin-top: 3rem;
+}
+.testimonials button {
+  border-radius: 50%;
+  margin-left: 12px;
+  background-color: #f0f3f3;
+}
+#carouselExampleDark {
+  height: 250px;
+}
+
+/* ====================shop-content---------------*/
+.shop-content {
+  background-color: #fc2484;
+}
+.shop-content .btn {
+  background-color: rgba(255, 255, 0, 0);
+  border: 1px solid black;
+  font-weight: 500;
+}
+.shop-content .btn:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.about-us-container {
+  & .hero-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    z-index: 1;
+  }
+  & .hero-image {
+    /* background: url(/assets/2880_x_810_1_2880x810_crop_center.webp); */
+    min-height: 400px !important;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+  }
+
+  .hero-wrapper {
+    height: 40dvh;
+    /* position: absolute; */
+    /* z-index: 3; */
+
+    & .hero-section {
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40dvh;
+      z-index: 2;
+
+      & .hero-section-carousel {
+        & img {
+          width: 100%;
+          height: 40dvh;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
