@@ -877,3 +877,64 @@ ul {
     }
   }
 }
+
+/**************************   blog detail page     ******************************/
+
+.background-color {
+  background-color: #3232320c;
+}
+
+.quick-links h5 {
+  font-weight: bold;
+}
+.quick-links a {
+  /* font-weight: bold; */
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.671);
+  border-bottom: 1px solid rgba(34, 34, 34, 0.699);
+}
+.quick-links a:hover {
+  /* font-weight: bold; */
+  border-bottom: 1px solid rgba(70, 67, 67, 0.507);
+  color: rgba(34, 34, 34, 0.507);
+}
+.quick-links ul li {
+  font-weight: bold;
+  /* border: 1px solid red; */
+}
+
+.article h1,
+.article h5 {
+  font-weight: 400;
+}
+
+/*----------------------------- card section */
+.articles-card .btn {
+  border-bottom: 2px solid rgba(174, 0, 255, 0.171);
+  font-weight: bold;
+  border-radius: 0;
+}
+.articles-card .btn:hover {
+  border-bottom: 2px solid rgb(174, 0, 255);
+}
+/* .articles-card {
+    background-color: #5e5b5b15;
+    box-sizing: border-box;
+    border-radius: 0;
+  } */
+.article-card img {
+  height: 18rem;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+.article-card {
+  overflow: hidden; /* Prevent the image from overflowing the card */
+  /* width: 100%; */
+}
+.article-card:hover img {
+  transform: scale(1.02); /* Slight zoom on hover */
+}

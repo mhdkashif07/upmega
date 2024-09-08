@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upmega</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg w-100 z-index-5 bg-dark">
+      <div class="container">
+        <a class="navbar-brand logo show" href="#">
+          <img src="./assets/logo.png" class="logo" alt="img" />
+        </a>
+
+        <a class="navbar-brand logo-b hide" href="#">
+          <img src="./assets/logo 1.svg" class="logob" alt="img" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-toggle2-on"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link ac tive" aria-current="page" href="#">Home</a>
+            </li>
+            <li
+              class="nav-item dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Sofas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="social-icons">
+            <img src="./assets/wishlist.svg" alt="" />
+            <img src="./assets/Vector (1).svg" alt="" />
+            <img src="./assets/Shopicon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav-dropdown -->
+    <div class="container-fluid navbar-drop-down hide">
+      <div class="container">
+        <div class="row" style="margin-top: 7rem">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-7 sofa-container">
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s1 (1).png" class="img-fluid" alt="" />
+              <p>Recliner Chair</p>
+            </div>
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s2.png" class="img-fluid" alt="" />
+              <p>Recliner Sectional</p>
+            </div>
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s3.png" class="img-fluid" alt="" />
+              <p>Recliner Sofa Set</p>
+            </div>
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s4.png" class="img-fluid" alt="" />
+              <p>Recliner Sectional</p>
+            </div>
+            <div class="sofa-card cursor-pointer">
+              <img src="./assets/s5.png" class="img-fluid" alt="" />
+              <p>Recliner Sectional</p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 navbar-drop-down-detail d-flex align-items-lg-end flex-column pe-lg-5"
+          >
+            <div class="detail-wrapper">
+              <h5 class="fw-bold mt-5">Our Products</h5>
+              <p>Recliner Seats</p>
+              <p>Recliner Sectional</p>
+              <p>Recliner Sofa Sets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-4 mt-5">
+      <div class="text-center">
+        <h1 class="fw-bold">
+          Ultimate Guide to Starting and Growing a Smart Home in 2024!
+        </h1>
+        <p class="text -muted text-primary fw-bold">May 21, 2024</p>
+      </div>
+    </div>
+    <div class="background-color py-4">
+      <div class="container my-4 text-center">
+        <img
+          src="assets/Smart_Home.webp"
+          alt="Smart Home Setup"
+          class="img-fluid rounded"
+        />
+      </div>
+      <div class="container quick-links mt-4">
+        <h5 class="">Quick Links</h5>
+        <ul class="list-group list-group-flush">
+          <li class="mt-3">
+            <span class="fs-3 pr-3">1</span>
+            <a href="#"> Effective Control Methods</a>
+          </li>
+          <li class="mt-3">
+            <span class="fs-3 pr-3">2</span>
+            <a href="#"> Choosing the Right Smart Home System</a>
+          </li>
+          <li class="mt-3">
+            <span class="fs-3 pr-3">3</span>
+            <a href="#"> Selecting Smart Devices</a>
+          </li>
+          <li class="mt-3">
+            <span class="fs-3 pr-3">4</span>
+            <a href="#"> Incorporating Smart Furniture</a>
+          </li>
+          <li class="mt-3">
+            <span class="fs-3 pr-3">5</span>
+            <a href="#"> Setting Up Automations</a>
+          </li>
+        </ul>
+        <p class="mt-5">
+          Building your dream smart home isn’t just about stuffing your space
+          with the latest tech. It's about making your life easier and
+          impressing your guests without them even noticing. Our top three
+          goals? Seamless operation, high family approval, and long-term
+          reliability. Think of it as creating a magical background service that
+          keeps everyone in your household smiling and everything running
+          smoothly without constant tinkering. Hit these goals, and you'll have
+          a smart home that feels like it came straight out of a sci-fi movie.
+        </p>
+      </div>
+
+      <!-- Article Sections -->
+      <section class="container article">
+        <div class="mt-5">
+          <h1>Effective Control Methods</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque euismod, urna eu tincidunt congue, nisl nisi auctor
+            eros, ac posuere nisi neque vel urna. Vivamus a arcu id mauris...
+          </p>
+        </div>
+
+        <div class="article mt-5">
+          <h1>Choosing the Right Smart Home System</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            ultricies felis ac lectus venenatis, nec venenatis est suscipit.
+            Nulla facilisi...
+          </p>
+        </div>
+
+        <div class="article mt-5">
+          <h1>Selecting Smart Devices</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            ullamcorper, libero a feugiat feugiat, odio neque dapibus ligula, id
+            feugiat justo quam et nulla...
+          </p>
+        </div>
+
+        <div class="article mt-5">
+          <h4>Smart Lighting</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            ullamcorper, libero a feugiat feugiat, odio neque dapibus ligula, id
+            feugiat justo quam et nulla...
+          </p>
+        </div>
+        <div class="article mt-5">
+          <h4>Smart Home Security</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            ullamcorper, libero a feugiat feugiat, odio neque dapibus ligula, id
+            feugiat justo quam et nulla...
+          </p>
+        </div>
+        <div class="article mt-5">
+          <h4>Smart Thermostats</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            ullamcorper, libero a feugiat feugiat, odio neque dapibus ligula, id
+            feugiat justo quam et nulla...
+          </p>
+        </div>
+        <div class="article mt-5">
+          <h4>Smart Entertainment</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            ullamcorper, libero a feugiat feugiat, odio neque dapibus ligula, id
+            feugiat justo quam et nulla...
+          </p>
+        </div>
+
+        <div class="article mt-5">
+          <h1>Incorporating Smart Furniture</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            tincidunt consectetur augue, a elementum urna dignissim non...
+          </p>
+        </div>
+
+        <div class="article mt-5">
+          <h1>Setting Up Automations</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+            nisi viverra, pulvinar urna ut, laoreet ligula...
+          </p>
+        </div>
+      </section>
+
+      <!-- -----------------------------------cards Section -->
+      <div class="container-fluid articles-card mt-5">
+        <h1 class="text-center my-4">Articles</h1>
+        <div class="row">
+          <!-- Article Card 1 -->
+          <div class="col-lg-4 col-md-4">
+            <a href="" class="text-dark">
+              <div class="card article-card mb-4">
+                <img src="/assets/img4.webp" class="card-img-top" alt="Sofa" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Choosing the Perfect Electric Recliner for You
+                  </h5>
+                  <p class="card-text">
+                    Discover the ultimate in comfort and style with these top
+                    electric recliners.
+                  </p>
+                  <a href="#" class="btn px-0 mt-5 pb-2">Read Article</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Article Card 2 -->
+          <div class="col-lg-4 col-md-4">
+            <a href="" class="text-dark">
+              <div class="card article-card mb-4">
+                <img src="/assets/img3.webp" class="card-img-top" alt="Sofa" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Why Tech Sofa is the Best Recliner for Portability
+                  </h5>
+                  <p class="card-text">
+                    Compact, comfortable recliners perfect for small spaces and
+                    portability.
+                  </p>
+                  <a href="#" class="btn px-0 mt-5 pb-2">Read Article</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Article Card 3 -->
+          <div class="col-lg-4 col-md-4">
+            <a href="" class="text-dark">
+              <div class="card article-card mb-4">
+                <img src="/assets/img-2.webp" class="card-img-top" alt="Sofa" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Choosing the Perfect Electric Recliner for You
+                  </h5>
+                  <p class="card-text">
+                    Discover the ultimate in comfort and style with these top
+                    electric recliners.
+                  </p>
+                  <a href="#" class="btn px-0 mt-5 pb-2">Read Article</a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="container-fluid dark-blue contact-us-section">
+      <div class="row">
+        <div class="col-lg-6 bo rder m-auto contact-us-section-inner">
+          <h5>stay updated</h5>
+          <h2>SIGN UP TO OUR Newsletter</h2>
+          <span>DISCOVER NEWS, OFFERS AND MORE</span>
+
+          <div class="contact-form">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter you email"
+            />
+            <button>subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-section mt-5">
+        <hr />
+        <div class="row py-5">
+          <div class="col-lg-3 production-section mb-5 mb-lg-0">
+            <h3>Our Products</h3>
+            <ul>
+              <li>
+                <a href="#">Recliner Seats</a>
+              </li>
+              <li>
+                <a href="#">Recliner Sectional</a>
+              </li>
+              <li>
+                <a href="#">Recliner Sofa Seats</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 production-section mb-5 mb-lg-0">
+            <h3>Guide</h3>
+            <ul>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <a href="#">Register</a>
+              </li>
+              <li>
+                <a href="#">My Account</a>
+              </li>
+              <li>
+                <a href="#">Sofa Categories</a>
+              </li>
+              <li>
+                <a href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 production-section mb-5 mb-lg-0">
+            <h3>Our Company</h3>
+            <ul>
+              <li>
+                <a href="#">Recliner Seats</a>
+              </li>
+              <li>
+                <a href="#">Recliner Sectional</a>
+              </li>
+              <li>
+                <a href="#">Recliner Sofa Seats</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 production-section ps-lg-5 mb-5 mb-lg-0">
+            <h3>Talk To Us</h3>
+            <ul>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 production-section findus-section">
+            <h3 class="ps-lg-5">Find Us</h3>
+            <div class="d-flex justify-content-lg-end">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-geo-alt" style="color: white"></i>
+                    <span>Capital One Plaza, 3rd Floor</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-envelope" style="color: white"></i>
+                    <span>info@trepanel.ae</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="bi bi-telephone" style="color: white"></i
+                    ><span>+254 (712) 345 678</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row deep-footer mt-4 pb-4">
+          <div class="col-lg-6">
+            <div class="facebook-f-1">
+              <img class="vector" src="./assets/logo.png" />
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex justify-content-end align-items-lg-end flex-column mt-5 mt-lg-0"
+          >
+            <div class="social-icons text-center pe-lg-5">
+              <div class="instagram-1">
+                <i class="bi bi-facebook"></i>
+              </div>
+              <div class="instagram-1">
+                <i class="bi bi-instagram"></i>
+              </div>
+              <div class="frame-48095449">
+                <div class="twitter-1">
+                  <i class="bi bi-twitter"></i>
+                </div>
+              </div>
+              <div class="frame-48095450">
+                <div class="linkedin-in-1">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </div>
+            <small class="copyright-2024-upmega-ltd">
+              © Copyright 2024 - Upmega Ltd
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
