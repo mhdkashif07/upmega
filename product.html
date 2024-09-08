@@ -127,25 +127,24 @@
       </div>
 
       <!-- stepper container -->
-
       <div class="container">
         <div class="stepper">
-          <div class="step active-step" id="step1">
+          <div class="step active-step" id="step1" onclick="goToStep(1)">
             <div class="step-label">Standard</div>
           </div>
-          <div class="step" id="step2">
+          <div class="step" id="step2" onclick="goToStep(2)">
             <div class="me-2">1</div>
             <div class="step-label">Seater</div>
           </div>
-          <div class="step" id="step3">
+          <div class="step" id="step3" onclick="goToStep(3)">
             <div class="me-2">2</div>
             <div class="step-label">Seater</div>
           </div>
-          <div class="step" id="step4">
+          <div class="step" id="step4" onclick="goToStep(4)">
             <div class="me-2">3</div>
             <div class="step-label">Seater</div>
           </div>
-          <div class="step" id="step5">
+          <div class="step" id="step5" onclick="goToStep(5)">
             <div class="step-label">Reviews</div>
           </div>
         </div>
@@ -173,7 +172,7 @@
                   </div>
                 </div>
               </div>
-              <button
+              <!-- <button
                 class="carousel-control-prev"
                 type="button"
                 data-bs-target="#carouselExampleIndicators2"
@@ -196,7 +195,7 @@
                   aria-hidden="true"
                 ></span>
                 <span class="visually-hidden">Next</span>
-              </button>
+              </button> -->
             </div>
           </div>
 
@@ -275,7 +274,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -286,7 +285,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -307,7 +306,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -318,7 +317,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -339,7 +338,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -350,7 +349,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -371,6 +370,7 @@
                         <div class="col-md-6 mb-4">
                           <div
                             class="product-box d-flex align-items-center border"
+                            onclick="toggleCheckboxFabrics(this); changeProductImage('./assets/section-2-3.jpg')"
                           >
                             <div
                               class="product-details d-flex flex-column align-items-center"
@@ -400,6 +400,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this);  changeProductImage('./assets/625 three 351.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -432,6 +433,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this);  changeProductImage('./assets/627 five 1238.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -462,6 +464,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this); changeProductImage('./assets/629 two 356.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -569,6 +572,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -577,7 +581,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -599,6 +603,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_734.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -607,7 +612,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -631,6 +636,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -639,7 +645,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -661,6 +667,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/628 three 833.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -669,7 +676,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -713,6 +720,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -721,7 +729,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -743,6 +751,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231606_610.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -751,7 +760,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -775,6 +784,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231607_158.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -783,7 +793,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -805,6 +815,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/section-2-6.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -813,7 +824,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -855,7 +866,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/s5.png')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -867,7 +878,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/section-2-2.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -879,7 +890,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/s2.png')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -891,7 +902,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/IMG_20240824_231518_204.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -903,7 +914,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/IMG_20240824_231508_734.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -921,6 +932,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxSofaLighting(this); changeProductImage('./assets/hero-3.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -929,7 +941,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="lighting-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -951,6 +963,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxSofaLighting(this); changeProductImage('./assets/626 five 1000.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -959,7 +972,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="lighting-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1002,6 +1015,8 @@
                     <div class="text-center">
                       <h4>Series 1</h4>
                     </div>
+
+                    <!-- Tabs -->
                     <ul
                       class="nav nav-tabs justify-content-center"
                       id="reclinerTabs"
@@ -1064,7 +1079,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -1075,7 +1090,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -1096,7 +1111,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -1107,7 +1122,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -1128,7 +1143,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -1139,7 +1154,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -1160,6 +1175,7 @@
                         <div class="col-md-6 mb-4">
                           <div
                             class="product-box d-flex align-items-center border"
+                            onclick="toggleCheckboxFabrics(this); changeProductImage('./assets/section-2-3.jpg')"
                           >
                             <div
                               class="product-details d-flex flex-column align-items-center"
@@ -1189,6 +1205,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this);  changeProductImage('./assets/625 three 351.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1221,6 +1238,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this);  changeProductImage('./assets/627 five 1238.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1251,6 +1269,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this); changeProductImage('./assets/629 two 356.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1358,6 +1377,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1366,7 +1386,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1388,6 +1408,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_734.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1396,7 +1417,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1420,6 +1441,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1428,7 +1450,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1450,6 +1472,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/628 three 833.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1458,7 +1481,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1502,6 +1525,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1510,7 +1534,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1532,6 +1556,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231606_610.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1540,7 +1565,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1564,6 +1589,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231607_158.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1572,7 +1598,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1594,6 +1620,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/section-2-6.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1602,7 +1629,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1644,7 +1671,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/s5.png')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -1656,7 +1683,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/section-2-2.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -1668,7 +1695,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/s2.png')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -1680,7 +1707,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/IMG_20240824_231518_204.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -1692,7 +1719,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/IMG_20240824_231508_734.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -1710,6 +1737,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxSofaLighting(this); changeProductImage('./assets/hero-3.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1718,7 +1746,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="lighting-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1740,6 +1768,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxSofaLighting(this); changeProductImage('./assets/626 five 1000.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -1748,7 +1777,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="lighting-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -1791,6 +1820,8 @@
                     <div class="text-center">
                       <h4>Series 1</h4>
                     </div>
+
+                    <!-- Tabs -->
                     <ul
                       class="nav nav-tabs justify-content-center"
                       id="reclinerTabs"
@@ -1853,7 +1884,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -1864,7 +1895,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -1885,7 +1916,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -1896,7 +1927,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -1917,7 +1948,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -1928,7 +1959,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -1949,6 +1980,7 @@
                         <div class="col-md-6 mb-4">
                           <div
                             class="product-box d-flex align-items-center border"
+                            onclick="toggleCheckboxFabrics(this); changeProductImage('./assets/section-2-3.jpg')"
                           >
                             <div
                               class="product-details d-flex flex-column align-items-center"
@@ -1978,6 +2010,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this);  changeProductImage('./assets/625 three 351.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2010,6 +2043,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this);  changeProductImage('./assets/627 five 1238.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2040,6 +2074,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this); changeProductImage('./assets/629 two 356.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2147,6 +2182,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2155,7 +2191,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2177,6 +2213,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_734.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2185,7 +2222,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2209,6 +2246,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2217,7 +2255,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2239,6 +2277,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/628 three 833.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2247,7 +2286,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2291,6 +2330,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2299,7 +2339,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2321,6 +2361,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231606_610.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2329,7 +2370,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2353,6 +2394,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231607_158.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2361,7 +2403,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2383,6 +2425,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/section-2-6.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2391,7 +2434,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2433,7 +2476,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/s5.png')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -2445,7 +2488,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/section-2-2.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -2457,7 +2500,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/s2.png')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -2469,7 +2512,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/IMG_20240824_231518_204.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -2481,7 +2524,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/IMG_20240824_231508_734.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -2499,6 +2542,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxSofaLighting(this); changeProductImage('./assets/hero-3.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2507,7 +2551,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="lighting-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2529,6 +2573,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxSofaLighting(this); changeProductImage('./assets/626 five 1000.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2537,7 +2582,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="lighting-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2580,6 +2625,8 @@
                     <div class="text-center">
                       <h4>Series 1</h4>
                     </div>
+
+                    <!-- Tabs -->
                     <ul
                       class="nav nav-tabs justify-content-center"
                       id="reclinerTabs"
@@ -2642,7 +2689,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -2653,7 +2700,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -2674,7 +2721,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -2685,7 +2732,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -2706,7 +2753,7 @@
                           <!-- Swivel Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center mb-3 option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-1.jpg')"
                           >
                             <div>Swivel</div>
                             <span
@@ -2717,7 +2764,7 @@
                           <!-- Glider Option -->
                           <div
                             class="form-check-label d-flex justify-content-between align-items-center option"
-                            onclick="toggleActive(this)"
+                            onclick="toggleActive(this, './assets/section-2-2.jpg')"
                           >
                             <div>Glider</div>
                             <span
@@ -2738,6 +2785,7 @@
                         <div class="col-md-6 mb-4">
                           <div
                             class="product-box d-flex align-items-center border"
+                            onclick="toggleCheckboxFabrics(this); changeProductImage('./assets/section-2-3.jpg')"
                           >
                             <div
                               class="product-details d-flex flex-column align-items-center"
@@ -2767,6 +2815,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this);  changeProductImage('./assets/625 three 351.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2799,6 +2848,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this);  changeProductImage('./assets/627 five 1238.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2829,6 +2879,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxFabrics(this); changeProductImage('./assets/629 two 356.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2936,6 +2987,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2944,7 +2996,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2966,6 +3018,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_734.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -2974,7 +3027,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -2998,6 +3051,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -3006,7 +3060,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -3028,6 +3082,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxChargers(this); changeProductImage('./assets/628 three 833.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -3036,7 +3091,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="charger-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -3080,6 +3135,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231508_265.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -3088,7 +3144,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -3110,6 +3166,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231606_610.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -3118,7 +3175,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -3142,6 +3199,7 @@
                         <!-- Third Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/IMG_20240824_231607_158.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -3150,7 +3208,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -3172,6 +3230,7 @@
                         <!-- Fourth Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxCupholder(this); changeProductImage('./assets/section-2-6.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -3180,7 +3239,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="cupholder-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -3222,7 +3281,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/s5.png')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -3234,7 +3293,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/section-2-2.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -3246,7 +3305,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/s2.png')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -3258,7 +3317,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/IMG_20240824_231518_204.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -3270,7 +3329,7 @@
                     <div
                       class="form-check-label d-flex justify-content-between align-items-center mb-3"
                       for="manualRecliner"
-                      onclick="toggleCheckbox(this)"
+                      onclick="toggleCheckbox(this); changeProductImage('./assets/IMG_20240824_231508_734.jpg')"
                     >
                       <div class="d-flex">
                         <input type="checkbox" class="accessory-checkbox" />
@@ -3288,6 +3347,7 @@
                         <!-- First Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxSofaLighting(this); changeProductImage('./assets/hero-3.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -3296,7 +3356,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="lighting-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -3318,6 +3378,7 @@
                         <!-- Second Box -->
                         <div class="col-md-6 mb-4">
                           <div
+                            onclick="toggleCheckboxSofaLighting(this); changeProductImage('./assets/626 five 1000.jpg')"
                             class="product-box d-flex align-items-center border"
                           >
                             <div
@@ -3326,7 +3387,7 @@
                               <div>
                                 <input
                                   type="checkbox"
-                                  class="sofa-checkbox"
+                                  class="lighting-checkbox"
                                   name="product-selection"
                                 />
                                 <img
@@ -3362,6 +3423,7 @@
                   </div>
                 </div>
               </div>
+
               <div
                 class="product-total-price d-flex justify-content-between align-items-center my-3"
               >
@@ -3696,45 +3758,39 @@
 
       function nextStep() {
         if (currentStep < 5) {
-          // Remove active class from the current step
-          document
-            .getElementById("step" + currentStep)
-            .classList.remove("active-step");
-
-          // Hide current step content
-          showStepContent(currentStep);
-
-          currentStep++; // Increment the step
-
-          // Add active class to the next step
-          document
-            .getElementById("step" + currentStep)
-            .classList.add("active-step");
-
-          // Show the content for the next step
-          showStepContent(currentStep);
+          updateStep(currentStep + 1);
         }
       }
 
       function previousStep() {
         if (currentStep > 1) {
-          // Remove active class from the current step
-          document
-            .getElementById("step" + currentStep)
-            .classList.remove("active-step");
+          updateStep(currentStep - 1);
+        }
+      }
 
-          // Hide current step content
-          showStepContent(currentStep);
+      // Function to update the current step and content
+      function updateStep(step) {
+        // Remove active class from the current step
+        document
+          .getElementById("step" + currentStep)
+          .classList.remove("active-step");
 
-          currentStep--; // Decrement the step
+        // Update the current step
+        currentStep = step;
 
-          // Add active class to the previous step
-          document
-            .getElementById("step" + currentStep)
-            .classList.add("active-step");
+        // Add active class to the new step
+        document
+          .getElementById("step" + currentStep)
+          .classList.add("active-step");
 
-          // Show the content for the previous step
-          showStepContent(currentStep);
+        // Show the content for the new step
+        showStepContent(currentStep);
+      }
+
+      // Function to handle clicking on a step
+      function goToStep(step) {
+        if (step >= 1 && step <= 5) {
+          updateStep(step);
         }
       }
 
@@ -3786,7 +3842,82 @@
           checkbox.checked = !checkbox.checked;
         }
       }
-      function toggleActive(element) {
+
+      //checkbox for other fabrics
+      function toggleCheckboxFabrics(element) {
+        const checkbox = element.querySelector("input.sofa-checkbox");
+
+        if (checkbox) {
+          // Toggle the checkbox's checked state
+          checkbox.checked = !checkbox.checked;
+
+          // If checked, add the 'active' class, otherwise remove it
+          if (checkbox.checked) {
+            element.classList.add("active-series-type");
+          } else {
+            element.classList.remove("active-series-type");
+          }
+        }
+      }
+
+      //checkbox for other chargers
+      function toggleCheckboxChargers(element) {
+        const checkbox = element.querySelector("input.charger-checkbox");
+
+        if (checkbox) {
+          // Toggle the checkbox's checked state
+          checkbox.checked = !checkbox.checked;
+
+          // If checked, add the 'active' class, otherwise remove it
+          if (checkbox.checked) {
+            element.classList.add("active-series-type");
+          } else {
+            element.classList.remove("active-series-type");
+          }
+        }
+      }
+
+      //checkbox for other cupholder
+      function toggleCheckboxCupholder(element) {
+        const checkbox = element.querySelector("input.cupholder-checkbox");
+
+        if (checkbox) {
+          // Toggle the checkbox's checked state
+          checkbox.checked = !checkbox.checked;
+
+          // If checked, add the 'active' class, otherwise remove it
+          if (checkbox.checked) {
+            element.classList.add("active-series-type");
+          } else {
+            element.classList.remove("active-series-type");
+          }
+        }
+      }
+
+      //checkbox for other sofa lighting
+      function toggleCheckboxSofaLighting(element) {
+        const checkbox = element.querySelector("input.lighting-checkbox");
+
+        if (checkbox) {
+          // Toggle the checkbox's checked state
+          checkbox.checked = !checkbox.checked;
+
+          // If checked, add the 'active' class, otherwise remove it
+          if (checkbox.checked) {
+            element.classList.add("active-series-type");
+          } else {
+            element.classList.remove("active-series-type");
+          }
+        }
+      }
+
+      //toggle active class for main types swivel and glider
+      function toggleActive(element, imagePath) {
+        // Get the image element by its ID
+        const productImage = document.getElementById("productImage");
+
+        // Update the image source
+        productImage.src = imagePath;
         // Find the current tab content that contains the clicked element
         const parentTab = element.closest(".tab-pane");
 
@@ -3798,6 +3929,12 @@
 
         // Add the active class to the clicked option
         element.classList.add("active-series-type");
+      }
+
+      // Function to change the product image
+      function changeProductImage(imagePath) {
+        const productImage = document.getElementById("productImage");
+        productImage.src = imagePath;
       }
     </script>
 

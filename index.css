@@ -485,10 +485,10 @@ ul {
   }
 
   .carouselExampleCaptions {
-    margin-top: -4.2rem;
+    margin-top: 2rem;
     & img {
-      height: 480px;
-      object-fit: contain;
+      height: 340px;
+      object-fit: cover;
     }
   }
 
@@ -516,6 +516,7 @@ ul {
     position: relative;
     padding: 10px;
     background-color: #645f7f;
+    cursor: pointer;
     clip-path: polygon(75% 0%, 91% 51%, 75% 100%, 0% 100%, 13% 49%, 0% 0%);
   }
 
@@ -644,6 +645,11 @@ ul {
     box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
     padding: 8px 10px;
     border-radius: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 400px;
+    right: 10%;
+    z-index: 999;
   }
 
   .next-step-btn {
@@ -724,7 +730,7 @@ ul {
   }
 
   & .scroll-container {
-    max-height: 400px; /* Set the height for scrollable section */
+    max-height: 300px; /* Set the height for scrollable section */
     overflow-y: auto; /* Enable vertical scrolling */
     padding-right: 15px; /* Optional padding */
   }
@@ -735,6 +741,10 @@ ul {
   }
 
   & .option.active-series-type {
+    background-color: #f1f1f1;
+  }
+
+  .active-series-type {
     background-color: #f1f1f1;
   }
 }
