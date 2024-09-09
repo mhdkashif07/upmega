@@ -718,13 +718,43 @@ ul {
   & .currency {
     font-size: 12px;
   }
+
+  & .modal {
+    background-color: #4f4f4fd4;
+  }
   & .modal-dialog {
-    max-width: 700px;
+    height: 90vh;
+    display: flex;
+    max-width: 700px !important;
+    justify-content: center;
+    align-items: center;
+
+    & .carousel-control-prev {
+      left: -13%;
+    }
+    & .carousel-control-next {
+      left: 97%;
+    }
+
+    .carousel-indicators {
+      bottom: -15%;
+      & button {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+  & .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   & .modal-dialog img {
     width: 300px;
-    height: auto;
+    height: 326px;
   }
 
   .modal-content {
