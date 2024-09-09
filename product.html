@@ -154,7 +154,7 @@
       <div class="container" id="main-container">
         <div class="row d-flex justify-content-between">
           <!-- Left Column Section for Carousel -->
-          <div class="col-md-6">
+          <div class="col-md-7">
             <div
               id="carouselExampleIndicators2"
               class="carousel slide carouselExampleCaptions"
@@ -172,30 +172,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators2"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators2"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button> -->
             </div>
           </div>
 
@@ -208,7 +184,7 @@
                   <div class="mt-4">
                     <!-- Nav tabs -->
                     <div class="text-center">
-                      <h4>Series 1</h4>
+                      <h4>Standard</h4>
                     </div>
 
                     <!-- Tabs -->
@@ -1013,7 +989,7 @@
                   <div class="mt-4">
                     <!-- Nav tabs -->
                     <div class="text-center">
-                      <h4>Series 1</h4>
+                      <h4>One Seater</h4>
                     </div>
 
                     <!-- Tabs -->
@@ -1818,7 +1794,7 @@
                   <div class="mt-4">
                     <!-- Nav tabs -->
                     <div class="text-center">
-                      <h4>Series 1</h4>
+                      <h4>Two Seater</h4>
                     </div>
 
                     <!-- Tabs -->
@@ -2623,7 +2599,7 @@
                   <div class="mt-4">
                     <!-- Nav tabs -->
                     <div class="text-center">
-                      <h4>Series 1</h4>
+                      <h4>Three Seater</h4>
                     </div>
 
                     <!-- Tabs -->
@@ -3422,6 +3398,24 @@
                     </div>
                   </div>
                 </div>
+                <div
+                  class="d-flex justify-content-between align-items-center ps-4"
+                >
+                  <button
+                    class="btn next-step-btn"
+                    style="width: 150px"
+                    onclick="previousStep()"
+                  >
+                    Previous
+                  </button>
+                  <button
+                    class="btn next-step-btn"
+                    style="width: 150px"
+                    onclick="nextStep()"
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
 
               <div
@@ -3433,8 +3427,8 @@
                   >
                   300,000</span
                 >
-                <button class="btn next-step-btn" onclick="nextStep()">
-                  Order Now
+                <button class="btn next-step-btn">
+                  <a href="./checkout.html">Order Now</a>
                 </button>
               </div>
             </div>
@@ -3687,8 +3681,8 @@
               ><span class="currency"><span class="currency">KSH</span></span>
               300,000</span
             >
-            <button class="btn next-step-btn" onclick="nextStep()">
-              Order Now
+            <button class="btn next-step-btn">
+              <a href="./checkout.html">Order Now</a>
             </button>
           </div>
         </div>
@@ -3843,71 +3837,105 @@
         }
       }
 
-      //checkbox for other fabrics
+      // Function to toggle checkbox and ensure only one is selected
       function toggleCheckboxFabrics(element) {
+        // Get all checkbox elements in the group
+        const checkboxes = document.querySelectorAll("input.sofa-checkbox");
+
+        // Uncheck all checkboxes and remove the 'active-series-type' class from their parent containers
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = false; // Uncheck all checkboxes
+          checkbox
+            .closest(".product-box")
+            .classList.remove("active-series-type"); // Remove active class from parent
+        });
+
+        // Get the checkbox inside the clicked element
         const checkbox = element.querySelector("input.sofa-checkbox");
 
         if (checkbox) {
-          // Toggle the checkbox's checked state
-          checkbox.checked = !checkbox.checked;
+          // Set the clicked checkbox as checked
+          checkbox.checked = true;
 
-          // If checked, add the 'active' class, otherwise remove it
-          if (checkbox.checked) {
-            element.classList.add("active-series-type");
-          } else {
-            element.classList.remove("active-series-type");
-          }
+          // Add the 'active-series-type' class to the parent product box
+          element.classList.add("active-series-type");
         }
       }
 
-      //checkbox for other chargers
+      // Function to toggle checkbox and ensure only one is selected
       function toggleCheckboxChargers(element) {
+        // Get all checkbox elements in the group
+        const checkboxes = document.querySelectorAll("input.charger-checkbox");
+
+        // Uncheck all checkboxes and remove the 'active-series-type' class from their parent containers
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = false; // Uncheck all checkboxes
+          checkbox
+            .closest(".product-box")
+            .classList.remove("active-series-type"); // Remove active class from parent
+        });
+
+        // Get the checkbox inside the clicked element
         const checkbox = element.querySelector("input.charger-checkbox");
 
         if (checkbox) {
-          // Toggle the checkbox's checked state
-          checkbox.checked = !checkbox.checked;
+          // Set the clicked checkbox as checked
+          checkbox.checked = true;
 
-          // If checked, add the 'active' class, otherwise remove it
-          if (checkbox.checked) {
-            element.classList.add("active-series-type");
-          } else {
-            element.classList.remove("active-series-type");
-          }
+          // Add the 'active-series-type' class to the parent product box
+          element.classList.add("active-series-type");
         }
       }
 
       //checkbox for other cupholder
       function toggleCheckboxCupholder(element) {
+        // Get all checkbox elements in the group
+        const checkboxes = document.querySelectorAll(
+          "input.cupholder-checkbox"
+        );
+
+        // Uncheck all checkboxes and remove the 'active-series-type' class from their parent containers
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = false; // Uncheck all checkboxes
+          checkbox
+            .closest(".product-box")
+            .classList.remove("active-series-type"); // Remove active class from parent
+        });
+
+        // Get the checkbox inside the clicked element
         const checkbox = element.querySelector("input.cupholder-checkbox");
 
         if (checkbox) {
-          // Toggle the checkbox's checked state
-          checkbox.checked = !checkbox.checked;
+          // Set the clicked checkbox as checked
+          checkbox.checked = true;
 
-          // If checked, add the 'active' class, otherwise remove it
-          if (checkbox.checked) {
-            element.classList.add("active-series-type");
-          } else {
-            element.classList.remove("active-series-type");
-          }
+          // Add the 'active-series-type' class to the parent product box
+          element.classList.add("active-series-type");
         }
       }
 
       //checkbox for other sofa lighting
       function toggleCheckboxSofaLighting(element) {
+        // Get all checkbox elements in the group
+        const checkboxes = document.querySelectorAll("input.lighting-checkbox");
+
+        // Uncheck all checkboxes and remove the 'active-series-type' class from their parent containers
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = false; // Uncheck all checkboxes
+          checkbox
+            .closest(".product-box")
+            .classList.remove("active-series-type"); // Remove active class from parent
+        });
+
+        // Get the checkbox inside the clicked element
         const checkbox = element.querySelector("input.lighting-checkbox");
 
         if (checkbox) {
-          // Toggle the checkbox's checked state
-          checkbox.checked = !checkbox.checked;
+          // Set the clicked checkbox as checked
+          checkbox.checked = true;
 
-          // If checked, add the 'active' class, otherwise remove it
-          if (checkbox.checked) {
-            element.classList.add("active-series-type");
-          } else {
-            element.classList.remove("active-series-type");
-          }
+          // Add the 'active-series-type' class to the parent product box
+          element.classList.add("active-series-type");
         }
       }
 
