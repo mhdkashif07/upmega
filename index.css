@@ -480,18 +480,22 @@ ul {
     background: white;
   }
 
+  
+
   & .nav-link {
     color: black;
   }
 
   .carouselExampleCaptions {
-    margin-top: 2rem;
+    margin-top: 5px;
     & img {
       /* height: 380px; */
       object-fit: cover;
     }
   }
-
+& .step-content {
+  margin-top: 5px;
+}
   .stepper {
     display: flex;
     justify-content: center;
@@ -529,6 +533,17 @@ ul {
   .step.active-step {
     background-color: var(--pink-color);
     color: #fff;
+    font-weight: bold;
+  }
+
+  .step {
+    cursor: pointer;
+  }
+  
+  .step.visited-step {
+    background-color: var(--pink-color);
+    color: #fff;
+    font-weight: bold;
   }
 
   .step-number {
@@ -648,14 +663,24 @@ ul {
   }
 
   .product-total-price {
-    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.5);
     padding: 8px 10px;
     border-radius: 8px;
     position: fixed;
+    right: 0;
     bottom: 0;
-    width: 400px;
-    right: 10%;
+    width: 425px;
+    right: 7%;
+    bottom: 0;
     z-index: 999;
+    background-color: white;
+  }
+
+  @media (min-width: 1400px) {
+    .product-total-price {
+      width: 450px;
+      right: 10%;
+    }
   }
 
   .next-step-btn {
@@ -694,6 +719,17 @@ ul {
     width: 100%;
     padding: 8px 10px;
     margin-bottom: 10px;
+  }
+
+  .reviews-section {
+    .carousel-control-next{
+      bottom: 50%; 
+      left: 90%;
+    }
+    .carousel-control-prev {
+      bottom: 50%; 
+      left: -4%;
+    }
   }
 
   & .review-selected-btn {
@@ -766,9 +802,15 @@ ul {
   }
 
   & .scroll-container {
-    max-height: 63vh; /* Set the height for scrollable section */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding-right: 15px; /* Optional padding */
+    max-height: 65vh;
+    overflow-y: auto; 
+    padding-right: 15px; 
+  }
+
+  @media (min-width: 1400px) {
+    .scroll-container {
+      max-height: 78vh;
+    }
   }
 
   /* Hide the scrollbar for Webkit browsers (Chrome, Safari, etc.) */
