@@ -534,6 +534,8 @@
                         class="btn btn-primary modal-button mt-3 mb-3"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
+                        id="myBtnModal"
+                        onclick="openModal()"
                       >
                         Features
                       </button>
@@ -4183,15 +4185,12 @@
       </div>
 
       <!-- Modal -->
-      <div
-        class="features-modal modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog d-flex">
-          <div class="container-fluid bg-white rounded-3 p-1">
+
+      <div class="features-modal">
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
             <div class="carousel-container">
               <button class="carousel-control prev" onclick="prevSlide()">
                 &#10094;
@@ -4199,68 +4198,161 @@
               <div class="carousel">
                 <div class="carousel-wrapper">
                   <div class="carousel-cell">
-                    <img
-                      src="https://emrekaya1.b-cdn.net/p1.jpg"
-                      alt="Card 1"
-                      class="carousel-img"
-                    />
-                    <p class="carousel-title">Eddie Kinsella</p>
-                    <p class="carousel-button">Call</p>
+                    <div class="feature-card">
+                      <img
+                        src="./assets/hero-1.jpg"
+                        class="d-block"
+                        alt="..."
+                      />
+                      <div class="feature-card-content" style="border: none">
+                        <h4 class="mb-2">Features</h4>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged. It was popularised in the 1960s with the
+                          release of Letraset sheets containing Lorem Ipsum
+                          passages, and more recently with desktop publishing
+                          software like Aldus PageMaker including versions of
+                          Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-cell">
-                    <img
-                      src="https://emrekaya1.b-cdn.net/p2.jpg"
-                      alt="Card 2"
-                      class="carousel-img"
-                    />
-                    <p class="carousel-title">Harrison Benac</p>
-                    <p class="carousel-button">Call</p>
+                    <div class="feature-card">
+                      <img
+                        src="./assets/hero-1.jpg"
+                        class="d-block"
+                        alt="..."
+                      />
+                      <div class="feature-card-content" style="border: none">
+                        <h4 class="mb-2">Features</h4>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged. It was popularised in the 1960s with the
+                          release of Letraset sheets containing Lorem Ipsum
+                          passages, and more recently with desktop publishing
+                          software like Aldus PageMaker including versions of
+                          Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-cell">
-                    <img
-                      src="https://emrekaya1.b-cdn.net/p3.jpg"
-                      alt="Card 3"
-                      class="carousel-img"
-                    />
-                    <p class="carousel-title">Sean Kingston</p>
-                    <p class="carousel-button">Call</p>
+                    <div class="feature-card">
+                      <img
+                        src="./assets/hero-1.jpg"
+                        class="d-block"
+                        alt="..."
+                      />
+                      <div class="feature-card-content" style="border: none">
+                        <h4 class="mb-2">Features</h4>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged. It was popularised in the 1960s with the
+                          release of Letraset sheets containing Lorem Ipsum
+                          passages, and more recently with desktop publishing
+                          software like Aldus PageMaker including versions of
+                          Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-cell">
-                    <img
-                      src="https://emrekaya1.b-cdn.net/p4.jpg"
-                      alt="Card 4"
-                      class="carousel-img"
-                    />
-                    <p class="carousel-title">Hayden Kaupu</p>
-                    <p class="carousel-button">Call</p>
+                    <div class="feature-card">
+                      <img
+                        src="./assets/hero-1.jpg"
+                        class="d-block"
+                        alt="..."
+                      />
+                      <div class="feature-card-content" style="border: none">
+                        <h4 class="mb-2">Features</h4>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged. It was popularised in the 1960s with the
+                          release of Letraset sheets containing Lorem Ipsum
+                          passages, and more recently with desktop publishing
+                          software like Aldus PageMaker including versions of
+                          Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-cell">
-                    <img
-                      src="https://emrekaya1.b-cdn.net/p5.jpg"
-                      alt="Card 5"
-                      class="carousel-img"
-                    />
-                    <p class="carousel-title">Franklin Tudor</p>
-                    <p class="carousel-button">Call</p>
+                    <div class="feature-card">
+                      <img
+                        src="./assets/hero-1.jpg"
+                        class="d-block"
+                        alt="..."
+                      />
+                      <div class="feature-card-content" style="border: none">
+                        <h4 class="mb-2">Features</h4>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged. It was popularised in the 1960s with the
+                          release of Letraset sheets containing Lorem Ipsum
+                          passages, and more recently with desktop publishing
+                          software like Aldus PageMaker including versions of
+                          Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="carousel-cell">
-                    <img
-                      src="https://emrekaya1.b-cdn.net/p6.jpg"
-                      alt="Card 6"
-                      class="carousel-img"
-                    />
-                    <p class="carousel-title">Herbert Simpson</p>
-                    <p class="carousel-button">Call</p>
-                  </div>
-                  <div class="carousel-cell">
-                    <img
-                      src="https://emrekaya1.b-cdn.net/p7.jpg"
-                      alt="Card 7"
-                      class="carousel-img"
-                    />
-                    <p class="carousel-title">Shaun Coleman</p>
-                    <p class="carousel-button">Call</p>
-                  </div>
+                  <!-- <div class="carousel-cell">
+                    <div class="feature-card">
+                      <img
+                        src="./assets/hero-1.jpg"
+                        class="d-block"
+                        alt="..."
+                      />
+                      <div class="feature-card-content" style="border: none">
+                        <h4 class="mb-2">Features</h4>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book. It has
+                          survived not only five centuries, but also the leap
+                          into electronic typesetting, remaining essentially
+                          unchanged. It was popularised in the 1960s with the
+                          release of Letraset sheets containing Lorem Ipsum
+                          passages, and more recently with desktop publishing
+                          software like Aldus PageMaker including versions of
+                          Lorem Ipsum.
+                        </p>
+                      </div>
+                    </div>
+                  </div> -->
                 </div>
               </div>
               <button class="carousel-control next" onclick="nextSlide()">
@@ -4269,6 +4361,7 @@
             </div>
           </div>
         </div>
+        <div class="custom-dots"></div>
       </div>
     </div>
 
@@ -4538,7 +4631,6 @@
       }
 
       // custom carousel
-      // Toggle button classes on click
       document.querySelectorAll(".b").forEach(function (button) {
         button.addEventListener("click", function () {
           this.classList.toggle("b");
@@ -4605,6 +4697,29 @@
         }
         updateCarousel();
       });
+
+      // Get the modal element
+      var modal = document.getElementById("myModal");
+
+      // Get the button that closes the modal
+      var closeBtn = document.getElementsByClassName("close")[0];
+
+      // Open modal function
+      function openModal() {
+        modal.style.display = "flex"; // Use flex to center it
+      }
+
+      // Close modal function
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // Function to close modal when clicking outside the modal content
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
     </script>
 
     <script src="./script.js"></script>

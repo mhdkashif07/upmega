@@ -480,8 +480,6 @@ ul {
     background: white;
   }
 
-  
-
   & .nav-link {
     color: black;
   }
@@ -493,9 +491,9 @@ ul {
       object-fit: cover;
     }
   }
-& .step-content {
-  margin-top: 5px;
-}
+  & .step-content {
+    margin-top: 5px;
+  }
   .stepper {
     display: flex;
     justify-content: center;
@@ -539,7 +537,7 @@ ul {
   .step {
     cursor: pointer;
   }
-  
+
   .step.visited-step {
     background-color: var(--pink-color);
     color: #fff;
@@ -663,14 +661,14 @@ ul {
   }
 
   .product-total-price {
-    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.5);
     padding: 8px 10px;
     border-radius: 8px;
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 425px;
-    right: 7%;
+    width: 423px;
+    right: 10%;
     bottom: 0;
     z-index: 999;
     background-color: white;
@@ -722,12 +720,12 @@ ul {
   }
 
   .reviews-section {
-    .carousel-control-next{
-      bottom: 50%; 
+    .carousel-control-next {
+      bottom: 50%;
       left: 90%;
     }
     .carousel-control-prev {
-      bottom: 50%; 
+      bottom: 50%;
       left: -4%;
     }
   }
@@ -802,9 +800,9 @@ ul {
   }
 
   & .scroll-container {
-    max-height: 65vh;
-    overflow-y: auto; 
-    padding-right: 15px; 
+    max-height: 67vh;
+    overflow-y: auto;
+    padding-right: 15px;
   }
 
   @media (min-width: 1400px) {
@@ -1017,64 +1015,122 @@ ul {
   transform: scale(1.02); /* Slight zoom on hover */
 }
 
-
 /***********************  Custom carousel    ***************************/
 .features-modal {
-
-.carousel-container {
+  .carousel-container {
     position: relative;
-    width: 70%;
-    max-width: 1200px;
+    /* width: 70%; */
+    /* max-width: 1200px; */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
-    background-color: #f0f0f0;
-}
+    background-color: transparent;
+  }
 
-.carousel {
+  /* Modal Background */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Ensures modal stays on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.96
+    ); /* Dark semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    /* max-width: 900px; */
+    width: 100%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  }
+
+  /* Close Button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Blurred effect for the background when modal is active */
+  .blur {
+    filter: blur(5px); /* Apply blur to the whole page */
+    transition: filter 0.3s ease; /* Smooth transition when blur is applied or removed */
+  }
+
+  .carousel {
     overflow: hidden;
     position: relative;
-}
+  }
 
-.carousel-wrapper {
+  .carousel-wrapper {
     display: flex;
     transition: transform 0.5s ease;
-}
+  }
 
-.carousel-cell {
-    min-width: 33.33%;
+  .carousel-cell {
+    min-width: 45%;
     box-sizing: border-box;
-    padding: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+    padding: 10px; /* Adds padding inside the cell */
+    margin-right: 15px; /* Adds margin between the cells */
     opacity: 0.5;
     filter: blur(2px);
-}
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+  }
 
-.carousel-cell.is-selected {
+  .carousel-cell:last-child {
+    margin-right: 0; /* Removes margin on the last carousel cell */
+  }
+
+  .carousel-cell.is-selected {
     transform: scale(1.1);
     opacity: 1;
     filter: none;
-}
+  }
 
-.carousel-cell.is-blurred {
+  .carousel-cell.is-blurred {
     filter: blur(4px); /* Stronger blur for non-active cards */
     opacity: 0.5;
-}
+  }
 
-.carousel-img {
+  .carousel-img {
     width: 100%;
     border-radius: 10px;
-}
+  }
 
-.carousel-title {
+  .carousel-title {
     text-align: center;
     margin: 10px 0;
-}
+  }
 
-.carousel-button {
+  .carousel-button {
     display: block;
     margin: 0 auto;
     padding: 5px 10px;
@@ -1083,13 +1139,13 @@ ul {
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
-}
+  }
 
-.carousel-button:hover {
+  .carousel-button:hover {
     background: darkgreen;
-}
+  }
 
-.carousel-control {
+  .carousel-control {
     position: absolute;
     top: 50%;
     width: 30px;
@@ -1104,13 +1160,70 @@ ul {
     border-radius: 50%;
     z-index: 10;
     transform: translateY(-50%);
-}
+  }
 
-.carousel-control.prev {
+  .carousel-control.prev {
     left: 10px;
+  }
+
+  .carousel-control.next {
+    right: 10px;
+  }
 }
 
-.carousel-control.next {
-    right: 10px;
+.feature-card {
+  /* width: 450px; */
+  height: 400px;
+  display: flex;
+  /* border: 1px solid #ddd; */
+  overflow: hidden;
+  margin: 0 20px;
+  background-color: white;
+  border-radius: 20px;
 }
+
+.feature-card img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers its container */
+}
+
+.feature-card-content {
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.feature-card-content h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.feature-card-content p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.custom-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.custom-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-dot.selected {
+  background-color: var(--pink-color);
 }
