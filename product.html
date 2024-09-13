@@ -531,11 +531,8 @@
                     >
                       <button
                         type="button"
-                        class="btn btn-primary modal-button mt-3 mb-3"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
+                        class="btn btn-primary modal-button mt-3 mb-3 myBtnModal"
                         id="myBtnModal"
-                        onclick="openModal()"
                       >
                         Features
                       </button>
@@ -681,9 +678,8 @@
                     >
                       <button
                         type="button"
-                        class="btn btn-primary modal-button mt-3 mb-3"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
+                        class="btn btn-primary modal-button mt-3 mb-3 myBtnModal"
+                        id="myBtnModal"
                       >
                         Features
                       </button>
@@ -829,9 +825,8 @@
                     >
                       <button
                         type="button"
-                        class="btn btn-primary modal-button mt-3 mb-3"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
+                        class="btn btn-primary modal-button mt-3 mb-3 myBtnModal"
+                        id="myBtnModal"
                       >
                         Features
                       </button>
@@ -976,9 +971,8 @@
                     >
                       <button
                         type="button"
-                        class="btn btn-primary modal-button mt-3 mb-3"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
+                        class="btn btn-primary modal-button mt-3 mb-3 myBtnModal"
+                        id="myBtnModal"
                       >
                         Features
                       </button>
@@ -4187,7 +4181,7 @@
       <!-- Modal -->
 
       <div class="features-modal">
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal" style="display: none">
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
@@ -4214,11 +4208,7 @@
                           scrambled it to make a type specimen book. It has
                           survived not only five centuries, but also the leap
                           into electronic typesetting, remaining essentially
-                          unchanged. It was popularised in the 1960s with the
-                          release of Letraset sheets containing Lorem Ipsum
-                          passages, and more recently with desktop publishing
-                          software like Aldus PageMaker including versions of
-                          Lorem Ipsum.
+                          unchanged.
                         </p>
                       </div>
                     </div>
@@ -4240,11 +4230,7 @@
                           scrambled it to make a type specimen book. It has
                           survived not only five centuries, but also the leap
                           into electronic typesetting, remaining essentially
-                          unchanged. It was popularised in the 1960s with the
-                          release of Letraset sheets containing Lorem Ipsum
-                          passages, and more recently with desktop publishing
-                          software like Aldus PageMaker including versions of
-                          Lorem Ipsum.
+                          unchanged.
                         </p>
                       </div>
                     </div>
@@ -4266,11 +4252,7 @@
                           scrambled it to make a type specimen book. It has
                           survived not only five centuries, but also the leap
                           into electronic typesetting, remaining essentially
-                          unchanged. It was popularised in the 1960s with the
-                          release of Letraset sheets containing Lorem Ipsum
-                          passages, and more recently with desktop publishing
-                          software like Aldus PageMaker including versions of
-                          Lorem Ipsum.
+                          unchanged.
                         </p>
                       </div>
                     </div>
@@ -4292,11 +4274,7 @@
                           scrambled it to make a type specimen book. It has
                           survived not only five centuries, but also the leap
                           into electronic typesetting, remaining essentially
-                          unchanged. It was popularised in the 1960s with the
-                          release of Letraset sheets containing Lorem Ipsum
-                          passages, and more recently with desktop publishing
-                          software like Aldus PageMaker including versions of
-                          Lorem Ipsum.
+                          unchanged.
                         </p>
                       </div>
                     </div>
@@ -4318,11 +4296,7 @@
                           scrambled it to make a type specimen book. It has
                           survived not only five centuries, but also the leap
                           into electronic typesetting, remaining essentially
-                          unchanged. It was popularised in the 1960s with the
-                          release of Letraset sheets containing Lorem Ipsum
-                          passages, and more recently with desktop publishing
-                          software like Aldus PageMaker including versions of
-                          Lorem Ipsum.
+                          unchanged.
                         </p>
                       </div>
                     </div>
@@ -4701,7 +4675,7 @@
       // Get the modal element
       var modal = document.getElementById("myModal");
 
-      // Get the button that closes the modal
+      // Get the close button element
       var closeBtn = document.getElementsByClassName("close")[0];
 
       // Open modal function
@@ -4720,6 +4694,13 @@
           modal.style.display = "none";
         }
       };
+
+      // Add event listeners to all buttons with the 'myBtnModal' class
+      document.querySelectorAll(".myBtnModal").forEach(function (button) {
+        button.addEventListener("click", function () {
+          openModal();
+        });
+      });
     </script>
 
     <script src="./script.js"></script>
