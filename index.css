@@ -1173,7 +1173,7 @@ ul {
 
 .feature-card {
   /* width: 450px; */
-  height: 400px;
+  height: 350px;
   display: flex;
   /* border: 1px solid #ddd; */
   overflow: hidden;
