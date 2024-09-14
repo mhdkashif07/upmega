@@ -4314,7 +4314,6 @@
         <div id="myModal" class="modal" style="display: none">
           <!-- Modal content -->
           <div class="modal-content">
-            <span class="close">&times;</span>
             <div class="carousel-container">
               <button class="carousel-control prev" onclick="prevSlide()">
                 &#10094;
@@ -4322,6 +4321,7 @@
               <div class="carousel">
                 <div class="carousel-wrapper">
                   <div class="carousel-cell">
+                    <span class="close">&times;</span>
                     <div class="feature-card">
                       <img
                         src="./assets/hero-1.jpg"
@@ -4344,6 +4344,7 @@
                     </div>
                   </div>
                   <div class="carousel-cell">
+                    <span class="close">&times;</span>
                     <div class="feature-card">
                       <img
                         src="./assets/hero-1.jpg"
@@ -4366,6 +4367,7 @@
                     </div>
                   </div>
                   <div class="carousel-cell">
+                    <span class="close">&times;</span>
                     <div class="feature-card">
                       <img
                         src="./assets/hero-1.jpg"
@@ -4388,6 +4390,7 @@
                     </div>
                   </div>
                   <div class="carousel-cell">
+                    <span class="close">&times;</span>
                     <div class="feature-card">
                       <img
                         src="./assets/hero-1.jpg"
@@ -4410,6 +4413,7 @@
                     </div>
                   </div>
                   <div class="carousel-cell">
+                    <span class="close">&times;</span>
                     <div class="feature-card">
                       <img
                         src="./assets/hero-1.jpg"
@@ -4463,9 +4467,9 @@
                 &#10095;
               </button>
             </div>
+            <div class="custom-dots"></div>
           </div>
         </div>
-        <div class="custom-dots"></div>
       </div>
     </div>
 
@@ -4760,19 +4764,47 @@
       // Custom Carousel Functionality
       let currentIndex = 0;
 
+      // Function to create the custom dots
+      function createDots() {
+        const dotsContainer = document.querySelector(".custom-dots");
+        dotsContainer.innerHTML = ""; // Clear any existing dots
+
+        const cells = document.querySelectorAll(".carousel-cell");
+        const totalCells = cells.length;
+
+        // Generate dots based on number of carousel cells
+        for (let i = 0; i < totalCells; i++) {
+          const dot = document.createElement("div");
+          dot.classList.add("custom-dot");
+          if (i === currentIndex) {
+            dot.classList.add("selected");
+          }
+          dot.setAttribute("data-slide", i);
+          dot.addEventListener("click", () => {
+            currentIndex = i;
+            updateCarousel();
+          });
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function updateDots() {
+        const dots = document.querySelectorAll(".custom-dot");
+        dots.forEach((dot, index) => {
+          dot.classList.toggle("selected", index === currentIndex);
+        });
+      }
+
       function updateCarousel() {
         const cells = document.querySelectorAll(".carousel-cell");
         const totalCells = cells.length;
 
         cells.forEach((cell, index) => {
+          // Handle the case when there are 3 or fewer cells
           if (totalCells <= 3) {
-            // Handle the case when there are 3 or fewer cells
-            if (index === 0) {
+            if (index === currentIndex) {
               cell.classList.add("is-selected");
               cell.classList.remove("is-blurred");
-            } else if (index === 1) {
-              cell.classList.add("is-selected");
-              cell.classList.add("is-blurred");
             } else {
               cell.classList.remove("is-selected");
               cell.classList.add("is-blurred");
@@ -4789,10 +4821,13 @@
           }
         });
 
-        const offset = -((currentIndex * 100) / 3); // Adjust the offset to show 3 items at a time
+        const visibleItems = Math.min(3, totalCells); // Adjust for how many items should be visible
+        const offset = -((currentIndex * 100) / visibleItems); // Adjust offset based on visible items
         document.querySelector(
           ".carousel-wrapper"
         ).style.transform = `translateX(${offset}%)`;
+
+        updateDots(); // Update the dots based on the current index
       }
 
       function nextSlide() {
@@ -4809,19 +4844,21 @@
 
       // Initialize carousel
       document.addEventListener("DOMContentLoaded", () => {
-        // Set initial state for two visible cards
         const totalCells = document.querySelectorAll(".carousel-cell").length;
         if (totalCells <= 3) {
-          currentIndex = 0;
+          currentIndex = 0; // This will show the first cell
         }
+        createDots(); // Create the dots when the carousel loads
         updateCarousel();
       });
+
+      //end of the custom carousel
 
       // Get the modal element
       var modal = document.getElementById("myModal");
 
       // Get the close button element
-      var closeBtn = document.getElementsByClassName("close")[0];
+      var closeBtns = document.getElementsByClassName("close");
 
       // Open modal function
       function openModal() {
@@ -4829,10 +4866,15 @@
       }
 
       // Close modal function
-      closeBtn.onclick = function () {
-        modal.style.display = "none";
-      };
-
+      // Loop through all close buttons and add an event listener to each
+      for (let i = 0; i < closeBtns.length; i++) {
+        closeBtns[i].addEventListener("click", function () {
+          const modal = this.closest(".modal"); // Assuming each close button is inside a modal
+          if (modal) {
+            modal.style.display = "none"; // Hide the modal or use your specific closing logic
+          }
+        });
+      }
       // Function to close modal when clicking outside the modal content
       window.onclick = function (event) {
         if (event.target == modal) {
